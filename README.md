@@ -58,9 +58,9 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 Du trenger å installere [pnpm](https://pnpm.io) som pakkehåndterer. 
 
-Sørg også for å ha Node versjon 16 (eller nyere) installert. 
+Sørg også for å ha [Node](https://nodejs.org/en/) versjon 16 (eller nyere) installert. 
 
-Git clone eller last ned Git repository.
+Git clone eller [last ned Git repository](https://github.com/w3bdesign/carasent-react-typescript/archive/refs/heads/main.zip).
 
 Kjør så: 
 
