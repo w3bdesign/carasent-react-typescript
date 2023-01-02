@@ -1,5 +1,10 @@
 # Kodeøvelse med React og Typescript
 
+Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek. 
+Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
+
+* * *
+
 > ## Frontend
 >
 > <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
@@ -8,8 +13,7 @@
 >
 > <img src="https://user-images.githubusercontent.com/45217974/210192555-6547b16d-d694-40d0-a761-5461dddf8212.png" alt="Storybook dokumentasjon" />
 
-Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek. 
-Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
+* * *
 
 ## Kravspesifikasjon
 
@@ -80,7 +84,7 @@ NEXT_PUBLIC_API_URL="https://rickandmortyapi.com/api"
 Etterfulgt av:
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 Åpne <http://localhost:3000> i nettleseren.
