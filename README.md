@@ -104,7 +104,7 @@ Vil du kjøre Jest (for unit-testing), kjør:
 
 ```bash
 cd packages/ui
-pnpm jest
+pnpm test
 ```
 
 * * *
