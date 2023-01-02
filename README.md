@@ -84,7 +84,7 @@ NEXT_PUBLIC_API_URL="https://rickandmortyapi.com/api"
 Etterfulgt av:
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 Åpne <http://localhost:3000> i nettleseren.
