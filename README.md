@@ -1,6 +1,6 @@
 # Kodeøvelse med React og Typescript
 
-<img src="https://user-images.githubusercontent.com/45217974/208365483-56679b3c-9ba4-4b21-92ad-bb6348691d38.png" alt="Screenshot av prosjekt">
+<img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt">
 
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek. 
 Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
