@@ -1,6 +1,12 @@
 # Kodeøvelse med React og Typescript
 
-<img src="https://user-images.githubusercontent.com/45217974/208365483-56679b3c-9ba4-4b21-92ad-bb6348691d38.png" alt="Screenshot av prosjekt">
+> ## Frontend
+> <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
+>
+
+> ## Dokumentasjon (Storybook)
+> <img src="https://user-images.githubusercontent.com/45217974/210192555-6547b16d-d694-40d0-a761-5461dddf8212.png" alt="Storybook dokumentasjon" />
+> 
 
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek. 
 Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
@@ -28,6 +34,7 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 ## Prosjektforklaring
 
+-   Monorepo med Turborepo satt opp med pnpm.
 -   Frontend med Next.js (React) 13 med bruk av Typescript template.
 -   Testing med Cypress og Cypress Axe for testing av a11y/WCAG.
 -   Testing med Jest og React Testing Library.
@@ -39,20 +46,30 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 -   Reset for form elementer med @tailwindcss/forms.
 -   Oppdatering av pakker i package.json med Renovate. 
 
+### Applikasjoner og pakker
+
+-   `storybook`: en [Storybook](https://storybook.js.org/) applikasjon
+-   `web`: en [Next.js](https://nextjs.org/) applikasjon
+-   `ui`: et React komponent bibliotek delt av både `web` og `storybook`
+-   `eslint-config-custom`: `eslint` konfigurasjoner (inkluderer `eslint-config-next` and `eslint-config-prettier`)
+-   `tsconfig`: `tsconfig.json`brukt i monorepo
+
 ## Hvordan kjøre prosjektet
 
-Sørg for å ha nyere versjon av Node og Npm (eller Yarn) installert. 
+Du trenger å installere [pnpm](https://pnpm.io) som pakkehåndterer. 
+
+Sørg også for å ha Node versjon 16 (eller nyere) installert. 
+
+Git clone eller last ned Git repository.
 
 Kjør så: 
 
 ```bash
-cd frontend
-npm install
-# eller
-yarn
+cd carasent-react-typescript
+pnpm i
 ```
 
-Du trenger å sette opp `/frontend/.env` ved å rename `.env.example` til `.env` og legge til følgende:
+Du trenger å sette opp `/apps/web/.env` ved å rename `.env.example` til `.env` og legge til følgende:
 
 ```bash
 NEXT_PUBLIC_API_URL="https://rickandmortyapi.com/api"
@@ -63,27 +80,27 @@ NEXT_PUBLIC_API_URL="https://rickandmortyapi.com/api"
 Etterfulgt av:
 
 ```bash
-npm run dev
-# eller
-yarn dev
+pnpm dev
 ```
 
 Åpne <http://localhost:3000> i nettleseren.
 
-Foretrekker du Docker, følg denne guiden: <https://github.com/vercel/next.js/tree/canary/examples/with-docker#in-existing-projects>
+Storybook starter automatisk.
 
-Vil du kjøre Storybook, kjør:
+Vil du kjøre Cypress (for E2E tester), kjør:
 
 ```bash
-npm run storybook
+cd apps/web
+pnpm run cypress:open
+# for headless testing
+pnpm run cypress:headless
 ```
 
-Vil du kjøre Cypress (for tester), kjør:
+Vil du kjøre Jest (for unit-testing), kjør:
 
 ```bash
-npm run cypress:open
-# for headless testing
-npm run cypress:headless
+cd packages/ui
+pnpm jest
 ```
 
 * * *
@@ -97,6 +114,13 @@ npm run cypress:headless
 
 # Hvorfor teknologi X?
 
+## Turborepo
+
+-   Forenkler utvikling med monorepo
+-   Veldig rask (har blant annet støtte for gratis remote caching med Vercel, så man sparer tid ved bygging)
+-   Støtter alle pakkehåndteringsprogrammer (npm, yarn og pnpm)
+-   Les mer om [Turbo](https://turbo.build) og [Turbo dokumentasjon](https://turbo.build/repo/docs)
+
 ## useSwr
 
 -   Caching av data fra API
@@ -105,7 +129,7 @@ npm run cypress:headless
 -   Paginering ut av boksen
 -   Fungerer best med data som endres ofte
 -   Støtte for Typescript
--   Slipper å bruke feks useEffect for datahåndtering
+-   Slipper å bruke useEffect for datahåndtering
 
 ## Next.js
 
@@ -171,18 +195,21 @@ npm run cypress:headless
 -   Tester WCAG (tilgjengelighet) av sider og komponenter
 -   Tilgjengelighet er lovpålagt på alle norske nettsider
 
+## Jest med React testing library
+
+-   Industristandard for unit testing av komponenter i React
+-   Kan utvides med feks coverage report (--coverage) så man oppnår ønsket testdekning
+
 * * *
 
 # TODO
 
 ## Ting jeg ville vurdert å se nærmere på om jeg skulle brukt mer tid på prosjektet
 
--   Flere og bedre tester, blant annet med React Testing Library og se på testdekning (over 80% er et godt utgangspunkt)
 -   Storybook story for alle komponenter (ikke bare Button)
 -   Forbedre Typescript definisjoner, særlig i useGetSingleCharacter
 -   Se mer på forhåndsinnlasting av data feks med getStaticProps eller getServerSideProps
 -   Se på validering av API data med Zod som allerede brukes til skjemaet
 -   Forbedre feilmeldinger vist i skjemaet
--   Lage en custom favicon for prosjektet
--   Revurdere struktur og mappevalg hvis prosjektet skal skaleres, vurdere å organisere per feature/view istedenfor som nå (ref React: The Road To Enterprise)
+-   Se på deploy med Dockerfile
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
