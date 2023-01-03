@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Button from "../Button.component";
+import { Button } from "../Button.component";
 
 describe("<Button>", () => {
   it("mounts", () => {
