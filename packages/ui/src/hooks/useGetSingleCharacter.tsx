@@ -1,10 +1,14 @@
 import useSWR from "swr";
 
 const useGetSingleCharacter = (id: number) => {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL
+    ? process.env.NEXT_PUBLIC_API_URL
+    : "https://rickandmortyapi.com/api"; // Midlertidig fallback for bruk i Docker
+
   const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
 
   const { data, error, isLoading } = useSWR(
-    `${process.env.NEXT_PUBLIC_API_URL}/character/${id}`,
+    `${API_URL}/character/${id}`,
     fetcher
   );
 

@@ -39,6 +39,7 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 ## Prosjektforklaring
 
 -   Monorepo med Turborepo satt opp med pnpm.
+-   Deployment er mulig via Docker (Dockerfile).
 -   Frontend med Next.js (React) 13 med bruk av Typescript template.
 -   Testing med Cypress og Cypress Axe for testing av a11y/WCAG.
 -   Testing med Jest og React Testing Library.
@@ -106,6 +107,21 @@ Vil du kjøre Jest (for unit-testing), kjør:
 cd packages/ui
 pnpm test
 ```
+
+Ønsker du å bygge et Docker image, sørg for å ha satt opp [Docker desktop](https://www.docker.com/products/docker-desktop/) og kjør kommandoen:
+
+```bash
+docker build -t carasent .
+
+```
+
+Nå kan du starte Docker kontaineren. 
+
+Gå inn i `Optional settings` og velg 3333 som port.
+
+Trykk `Run`.
+
+Nå kan du åpne <http://localhost:3333> i nettleseren.
 
 * * *
 
