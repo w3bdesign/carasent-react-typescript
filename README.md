@@ -5,13 +5,13 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 * * *
 
-> ## Frontend
->
-> <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
+## Frontend
 
-> ## Dokumentasjon (Storybook)
->
-> <img src="https://user-images.githubusercontent.com/45217974/210192555-6547b16d-d694-40d0-a761-5461dddf8212.png" alt="Storybook dokumentasjon" />
+ <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
+
+## Dokumentasjon (Storybook)
+
+ <img src="https://user-images.githubusercontent.com/45217974/210192555-6547b16d-d694-40d0-a761-5461dddf8212.png" alt="Storybook dokumentasjon" />
 
 * * *
 
