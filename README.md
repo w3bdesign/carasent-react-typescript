@@ -20,7 +20,7 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 -   [Komponenter](#Komponenter)
 -   [Prosjektforklaring](#Prosjektforklaring)
 -   [Mappeoppsett](#Mappeoppsett)
--   [Start](#Start)
+-   [Installasjon](#Installasjon)
 -   [Statehåndtering](#Statehåndtering)
 -   [Teknologivalg](#Teknologivalg)
 -   [TODO](#TODO)
@@ -77,7 +77,7 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 
 </details>
 
-## Start
+## Installasjon
 
 <details>
     <summary>Klikk for å vise mer</summary>
