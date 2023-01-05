@@ -3,6 +3,8 @@
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
 Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
 
+Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjøres lokalt.
+
 ## Frontend
 
  <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
@@ -13,19 +15,14 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 * * *
 
-## Kravspesifikasjon
-
--   Sette opp frontendprosjekt med React og Typescript.
--   Prosjektet skal kunne kjøres lokalt.
-
 ## Innholdsfortegnelse
 
 -   [Komponenter](#Komponenter)
 -   [Prosjektforklaring](#Prosjektforklaring)
--   [Applikasjoner]\(#Applikasjoner og pakker)
--   [Start]\(#Hvordan kjøre prosjektet)
+-   [Mappeoppsett](#Mappeoppsett)
+-   [Start](#Start)
 -   [Statehåndtering](#Statehåndtering)
--   [Hvorfor]\(#Hvorfor teknologi X?)
+-   [Teknologivalg](#Teknologivalg)
 -   [TODO](#TODO)
 
 ## Komponenter
@@ -67,7 +64,7 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 </details>
 
-## Applikasjoner og pakker
+## Mappeoppsett
 
 <details>
     <summary>Klikk for å vise mer</summary>
@@ -80,7 +77,7 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 </details>
 
-## Hvordan kjøre prosjektet
+## Start
 
 <details>
     <summary>Klikk for å vise mer</summary>
@@ -159,7 +156,7 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Trenger man state i bare noen komponenter er React Context et godt alternativ
 -   Trenger man state i mange komponenter er Redux med Redux Toolkit et bedre alternativ
 
-## Hvorfor teknologi X?
+## Teknologivalg
 
 ## Turborepo
 
