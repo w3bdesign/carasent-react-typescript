@@ -23,9 +23,9 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 -   [Komponenter](#Komponenter)
 -   [Prosjektforklaring](#Prosjektforklaring)
 -   [Applikasjoner]\(#Applikasjoner og pakker)
--   [Start](#Hvordan kjøre prosjektet)
+-   [Start]\(#Hvordan kjøre prosjektet)
 -   [Statehåndtering](#Statehåndtering)
--   [Hvorfor](#Hvorfor teknologi X?)
+-   [Hvorfor]\(#Hvorfor teknologi X?)
 -   [TODO](#TODO)
 
 ## Komponenter
@@ -249,7 +249,7 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 
 </details>
 
-# TODO
+## TODO
 
 ## Ting jeg ville vurdert å se nærmere på om jeg skulle brukt mer tid på prosjektet
 
