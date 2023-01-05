@@ -1,27 +1,3 @@
-## Example
-
-<details>
-    <summary>Click me</summary>
-
-### Heading
-
-1.  Foo
-2.  Bar
-         _ Baz
-         _ Qux
-    ### Some Code
-    ```js
-    function logSomething(something) {
-      console.log('Something', something);
-    }
-    ```
-    </details>
-
-## Rules
-
-1.  Have an **empty line** after the `</summary>` tag or markdown/code blocks will not render.
-2.  Have an **empty line** after each `</details>` tag if you have multiple collapsible sections.
-
 # Kodeøvelse med React og Typescript
 
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
@@ -47,8 +23,10 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 -   [Komponenter](#Komponenter)
 -   [Prosjektforklaring](#Prosjektforklaring)
 -   [Applikasjoner]\(#Applikasjoner og pakker)
--   [Start]\(#Hvordan kjøre prosjektet)
--   [Statehåndtering](Statehåndtering)
+-   [Start](#Hvordan kjøre prosjektet)
+-   [Statehåndtering](#Statehåndtering)
+-   [Hvorfor](#Hvorfor teknologi X?)
+-   [TODO](#TODO)
 
 ## Komponenter
 
@@ -91,13 +69,21 @@ Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliot
 
 ## Applikasjoner og pakker
 
+<details>
+    <summary>Klikk for å vise mer</summary>
+
 -   `storybook`: en [Storybook](https://storybook.js.org/) applikasjon
 -   `web`: en [Next.js](https://nextjs.org/) applikasjon
 -   `ui`: et React komponent bibliotek delt av både `web` og `storybook`
 -   `eslint-config-custom`: `eslint` konfigurasjoner (inkluderer `eslint-config-next` and `eslint-config-prettier`)
 -   `tsconfig`: `tsconfig.json`brukt i monorepo
 
+</details>
+
 ## Hvordan kjøre prosjektet
+
+<details>
+    <summary>Klikk for å vise mer</summary>
 
 Du trenger å installere [pnpm](https://pnpm.io) som pakkehåndterer.
 
@@ -161,16 +147,19 @@ Trykk `Run`.
 
 Nå kan du åpne <http://localhost:3333> i nettleseren.
 
-* * *
+</details>
 
 ## Statehåndtering
+
+<details>
+    <summary>Klikk for å vise mer</summary>
 
 -   Statehåndtering er akkurat nå implementert via useState i index.tsx
 -   Hvis man planlegger å utvide prosjektet med mange komponenter og i mye større skala ville jeg vurdert andre løsninger
 -   Trenger man state i bare noen komponenter er React Context et godt alternativ
 -   Trenger man state i mange komponenter er Redux med Redux Toolkit et bedre alternativ
 
-# Hvorfor teknologi X?
+## Hvorfor teknologi X?
 
 ## Turborepo
 
@@ -258,11 +247,14 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Industristandard for unit testing av komponenter i React
 -   Kan utvides med feks coverage report (--coverage) så man oppnår ønsket testdekning
 
-* * *
+</details>
 
 # TODO
 
 ## Ting jeg ville vurdert å se nærmere på om jeg skulle brukt mer tid på prosjektet
+
+<details>
+    <summary>Klikk for å vise mer</summary>
 
 -   Storybook story for alle komponenter (ikke bare Button)
 -   Forbedre Typescript definisjoner, særlig i useGetSingleCharacter
@@ -271,3 +263,5 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Forbedre feilmeldinger vist i skjemaet
 -   Se på deploy med Dockerfile
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
+
+</details>
