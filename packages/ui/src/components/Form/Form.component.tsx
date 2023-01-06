@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
-import { z } from "zod";
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { ReactNode } from 'react';
+import { z } from 'zod';
+import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 //import { formSchema } from "../../../pages/index";
 
@@ -10,9 +10,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 type TFormSchemaType = z.infer<typeof formSchema>;
 
 const formSchema = z.object({
-  firstName: z.string().min(1, { message: "Field is required" }),
-  gender: z.string().min(1, { message: "Field is required" }),
-  food: z.string().min(1, { message: "Field is required" }),
+  firstName: z.string().min(1, { message: 'Field is required' }),
+  gender: z.string().min(1, { message: 'Field is required' }),
+  food: z.string().min(1, { message: 'Field is required' }),
 });
 
 export interface IFormProps {

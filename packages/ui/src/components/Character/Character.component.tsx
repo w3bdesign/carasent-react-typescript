@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import useGetSingleCharacter from "../../hooks/useGetSingleCharacter";
+import useGetSingleCharacter from '../../hooks/useGetSingleCharacter';
 
-import { Spinner } from "../Spinner";
+import { Spinner } from '../Spinner';
 
 interface ICharacterId {
   id: number;
