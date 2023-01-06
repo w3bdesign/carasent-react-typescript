@@ -1,5 +1,5 @@
-import { Fragment } from "react";
-import { useFormContext } from "react-hook-form";
+import { Fragment } from 'react';
+import { useFormContext } from 'react-hook-form';
 
 export interface IRadioProps {
   options: string[];

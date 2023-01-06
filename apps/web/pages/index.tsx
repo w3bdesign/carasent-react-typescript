@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { SubmitHandler } from "react-hook-form";
-import { z } from "zod";
-import Head from "next/head";
+import { useState } from 'react';
+import { SubmitHandler } from 'react-hook-form';
+import { z } from 'zod';
+import Head from 'next/head';
 
-import { Button, Character, Header, Input, Form, Radio, Select } from "ui";
+import { Button, Character, Header, Input, Form, Radio, Select } from 'ui';
 
 type TFormSchemaType = z.infer<typeof formSchema>;
 
 export const formSchema = z.object({
-  firstName: z.string().min(1, { message: "Field is required" }),
-  gender: z.string().min(1, { message: "Field is required" }),
-  food: z.string().min(1, { message: "Field is required" }),
+  firstName: z.string().min(1, { message: 'Field is required' }),
+  gender: z.string().min(1, { message: 'Field is required' }),
+  food: z.string().min(1, { message: 'Field is required' }),
 });
 
 export default function Home() {
@@ -39,11 +39,11 @@ export default function Home() {
               <Select
                 name="gender"
                 labelText="Gender"
-                options={["female", "male", "other"]}
+                options={['female', 'male', 'other']}
               />
               <Radio
-                options={["pasta", "pizza", "hamburger"]}
-                labelText={"Favourite food"}
+                options={['pasta', 'pizza', 'hamburger']}
+                labelText={'Favourite food'}
                 name="food"
               />
               <Button variant="primary" type="submit">

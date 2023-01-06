@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-import Form from "../Form.component";
+import Form from '../Form.component';
 
-describe("<Form>", () => {
-  it("mounts", () => {
+describe('<Form>', () => {
+  it('mounts', () => {
     cy.mount(
       <Form
         onSubmit={() => {
-          alert("Submit");
+          alert('Submit');
         }}
       >
         Form

@@ -1,31 +1,31 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button, IButtonProps } from "../Button.component";
+import { Button, IButtonProps } from '../Button.component';
 
 //import "../../../styles/globals.css"
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Components/UI/Button",
+  title: 'Components/UI/Button',
   component: Button,
   argTypes: {
     variant: {
-      description: "Primary or secondary button variant",
-      options: ["primary", "secondary"],
-      control: "select",
+      description: 'Primary or secondary button variant',
+      options: ['primary', 'secondary'],
+      control: 'select',
     },
     children: {
-      description: "Children content to be rendered",
-      options: ["Button", "Second Button"],
+      description: 'Children content to be rendered',
+      options: ['Button', 'Second Button'],
       mapping: {
         Primary: <h1>Primary</h1>,
         Secondary: <h1>Secondary</h1>,
       },
     },
     onClick: {
-      description: "onClick handler for button",
-      action: "onClick",
+      description: 'onClick handler for button',
+      action: 'onClick',
     },
   },
 } as ComponentMeta<typeof Button>;
@@ -46,11 +46,11 @@ export const Primary = Template.bind({});
 export const Secondary = Template.bind({});
 
 Primary.args = {
-  variant: "primary",
+  variant: 'primary',
   children: <h1>Primary</h1>,
 };
 
 Secondary.args = {
-  variant: "secondary",
+  variant: 'secondary',
   children: <h1>Secondary</h1>,
 };

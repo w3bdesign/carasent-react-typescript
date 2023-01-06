@@ -1,4 +1,4 @@
-import { useFormContext } from "react-hook-form";
+import { useFormContext } from 'react-hook-form';
 
 export interface ISelectProps {
   options: string[];

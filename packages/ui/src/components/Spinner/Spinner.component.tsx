@@ -1,7 +1,7 @@
-import { classX } from "../../utils/functions";
+import { classX } from '../../utils/functions';
 
-export type TSpinnerColor = "blue" | "gray" | "green" | "red";
-export type TSpinnerSize = "standard" | "large";
+export type TSpinnerColor = 'blue' | 'gray' | 'green' | 'red';
+export type TSpinnerSize = 'standard' | 'large';
 
 export interface ISpinnerProps {
   color?: TSpinnerColor;
@@ -18,22 +18,22 @@ export interface ISpinnerProps {
  */
 
 export const Spinner = ({
-  color = "blue",
-  size = "standard",
+  color = 'blue',
+  size = 'standard',
 }: ISpinnerProps) => {
-  const baseStyle = "text-gray-200 mx-auto animate-spin dark:text-gray-600";
+  const baseStyle = 'text-gray-200 mx-auto animate-spin dark:text-gray-600';
   return (
     <div role="status">
       <svg
         aria-hidden="true"
         className={classX(
           baseStyle,
-          [color === "blue" && "fill-blue-600"],
-          [color === "gray" && "fill-gray-600"],
-          [color === "green" && "fill-green-500"],
-          [color === "red" && "fill-red-600"],
-          [size === "standard" && "w-8 h-8"],
-          [size === "large" && "w-16 h-16"]
+          [color === 'blue' && 'fill-blue-600'],
+          [color === 'gray' && 'fill-gray-600'],
+          [color === 'green' && 'fill-green-500'],
+          [color === 'red' && 'fill-red-600'],
+          [size === 'standard' && 'w-8 h-8'],
+          [size === 'large' && 'w-16 h-16']
         )}
         viewBox="0 0 100 101"
         fill="none"

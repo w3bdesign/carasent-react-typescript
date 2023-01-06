@@ -10,5 +10,5 @@ type TClassArgs = (string | (string | boolean)[])[];
 export const classX = (...args: TClassArgs): string =>
   args
     .flat()
-    .filter((x) => x !== null && x !== undefined && typeof x !== "boolean")
-    .join(" ");
+    .filter((x) => x !== null && x !== undefined && typeof x !== 'boolean')
+    .join(' ');

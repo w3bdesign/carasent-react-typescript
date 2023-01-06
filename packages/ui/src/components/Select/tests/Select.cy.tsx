@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import Select from "../Select.component";
+import Select from '../Select.component';
 
-describe("<Select>", () => {
+describe('<Select>', () => {
   // TODO: Should add more tests here
 });

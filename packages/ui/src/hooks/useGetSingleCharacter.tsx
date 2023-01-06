@@ -1,4 +1,4 @@
-import useSWR, { Fetcher } from "swr";
+import useSWR, { Fetcher } from 'swr';
 
 interface DataPayload<T> {
   [key: string]: T;
@@ -20,7 +20,7 @@ interface DataResponse<T> {
 const useGetSingleCharacter = <T,>(id: number): DataResponse<T> => {
   const API_URL = process.env.NEXT_PUBLIC_API_URL
     ? process.env.NEXT_PUBLIC_API_URL
-    : "https://rickandmortyapi.com/api"; // Midlertidig fallback for bruk i Docker
+    : 'https://rickandmortyapi.com/api'; // Midlertidig fallback for bruk i Docker
 
   const fetcher: Fetcher<DataPayload<T>> = (url: RequestInfo) =>
     fetch(url).then((response) => response.json());

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import Input from "../Input.component";
+import Input from '../Input.component';
 
-describe("<Input>", () => {
+describe('<Input>', () => {
   // TODO: Should add more tests here
 });
