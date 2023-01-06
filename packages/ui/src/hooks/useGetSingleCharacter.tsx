@@ -1,11 +1,12 @@
-import useSWR, { Fetcher } from 'swr';
+import useSWR from 'swr';
 
-interface DataPayload<T> {
-  [key: string]: T;
+interface IUser {
+  name: string;
+  image: string;
 }
 
 interface DataResponse<T> {
-  user?: DataPayload<T>;
+  user?: IUser;
   isLoading: boolean;
   isError: { error: Error };
 }
@@ -22,10 +23,10 @@ const useGetSingleCharacter = <T,>(id: number): DataResponse<T> => {
     ? process.env.NEXT_PUBLIC_API_URL
     : 'https://rickandmortyapi.com/api'; // Midlertidig fallback for bruk i Docker
 
-  const fetcher: Fetcher<DataPayload<T>> = (url: RequestInfo) =>
+  const fetcher = (url: RequestInfo) =>
     fetch(url).then((response) => response.json());
 
-  const { data, error, isLoading } = useSWR<DataPayload<T>>(
+  const { data, error, isLoading } = useSWR(
     `${API_URL}/character/${id}`,
     fetcher
   );

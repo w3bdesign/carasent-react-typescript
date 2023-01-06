@@ -24,9 +24,8 @@ export const Character = ({ id }: ICharacterId) => {
   return (
     <>
       <section className="bg-white rounded-lg px-6 py-6 shadow-lg mt-4 mb-4 mx-auto">
-        {isLoading ? (
-          <Spinner />
-        ) : (
+        {isLoading ? <Spinner /> : null}
+        {user ? (
           <>
             <h2 className="text-xl text-center font-bold p-2">{user.name}</h2>
             <Image
@@ -37,7 +36,7 @@ export const Character = ({ id }: ICharacterId) => {
               height="200"
             />
           </>
-        )}
+        ) : null}
       </section>
     </>
   );
