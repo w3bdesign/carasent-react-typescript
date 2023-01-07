@@ -35,22 +35,22 @@ export default function Home() {
             <Header title="Carascent - React / Typescript oppgave" />
             <Character id={2} />
             <Form onSubmit={onSubmit}>
-              <Input name="firstName" labelText="First Name" />
+              <Input name="firstName" labelText="Navn" />
               <Select
                 name="gender"
-                labelText="Gender"
-                options={['female', 'male', 'other']}
+                labelText="Kjønn"
+                options={['kvinne', 'mann', 'annet']}
               />
               <Radio
                 options={['pasta', 'pizza', 'hamburger']}
-                labelText={'Favourite food'}
+                labelText={'Favorittrett'}
                 name="food"
               />
               <Button variant="primary" type="submit">
-                Submit
+                Send
               </Button>
               <Button variant="secondary" type="reset">
-                Reset
+                Tøm skjema
               </Button>
             </Form>
             {formContent && (
