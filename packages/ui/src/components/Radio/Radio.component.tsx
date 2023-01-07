@@ -24,6 +24,7 @@ export const Radio = ({ options, labelText, name, ...rest }: IRadioProps) => {
     register,
     formState: { errors },
   } = useFormContext();
+
   return (
     <>
       <div className="mx-auto text-center w-64">
