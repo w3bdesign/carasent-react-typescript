@@ -10,9 +10,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 type TFormSchemaType = z.infer<typeof formSchema>;
 
 const formSchema = z.object({
-  firstName: z.string().min(1, { message: 'Field is required' }),
-  gender: z.string().min(1, { message: 'Field is required' }),
-  food: z.string().min(1, { message: 'Field is required' }),
+  firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
+  gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
+  food: z.enum(['pasta, pizza, hamburger'], {
+    errorMap: () => ({ message: 'Du må velge ett av alternativene' }),
+  }),
 });
 
 export interface IFormProps {
