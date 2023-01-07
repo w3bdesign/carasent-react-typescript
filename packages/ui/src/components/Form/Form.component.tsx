@@ -1,21 +1,17 @@
 import { ReactNode } from 'react';
 import { z } from 'zod';
-import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
+import {
+  FormProvider,
+  SubmitHandler,
+  useForm,
+  FieldValues,
+} from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-type TFormSchemaType = z.infer<typeof formSchema>;
-
-const formSchema = z.object({
-  firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
-  gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
-  food: z.enum(['pasta', 'pizza', 'hamburger'], {
-    errorMap: () => ({ message: 'Du må velge et alternativ' }),
-  }),
-});
 
 export interface IFormProps {
   children: ReactNode;
-  onSubmit: SubmitHandler<TFormSchemaType>;
+  onSubmit: SubmitHandler<any>;
+  formSchema: z.Schema<FieldValues>;
 }
 
 /**
@@ -27,8 +23,12 @@ export interface IFormProps {
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Form = ({ children, onSubmit }: IFormProps): JSX.Element => {
-  const methods = useForm<TFormSchemaType>({
+export const Form = ({
+  children,
+  onSubmit,
+  formSchema,
+}: IFormProps): JSX.Element => {
+  const methods = useForm({
     resolver: zodResolver(formSchema),
   });
   const { handleSubmit } = methods;

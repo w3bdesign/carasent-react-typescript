@@ -8,9 +8,11 @@ import { Button, Character, Header, Input, Form, Radio, Select } from 'ui';
 type TFormSchemaType = z.infer<typeof formSchema>;
 
 export const formSchema = z.object({
-  firstName: z.string().min(1, { message: 'Field is required' }),
-  gender: z.string().min(1, { message: 'Field is required' }),
-  food: z.string().min(1, { message: 'Field is required' }),
+  firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
+  gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
+  food: z.enum(['pasta', 'pizza', 'hamburger'], {
+    errorMap: () => ({ message: 'Du må velge et alternativ' }),
+  }),
 });
 
 export default function Home() {
@@ -34,7 +36,7 @@ export default function Home() {
           <div className="max-w-2xl w-full mx-auto px-4 py-16">
             <Header title="Carascent - React / Typescript oppgave" />
             <Character id={2} />
-            <Form onSubmit={onSubmit}>
+            <Form formSchema={formSchema} onSubmit={onSubmit}>
               <Input name="firstName" labelText="Navn" />
               <Select
                 name="gender"
