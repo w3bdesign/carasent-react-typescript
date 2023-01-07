@@ -3,17 +3,13 @@ import { z } from 'zod';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-//import { formSchema } from "../../../pages/index";
-
-//type TFormSchemaType = z.infer<typeof formSchema>;
-
 type TFormSchemaType = z.infer<typeof formSchema>;
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
-  food: z.enum(['pasta, pizza, hamburger'], {
-    errorMap: () => ({ message: 'Du må velge ett av alternativene' }),
+  food: z.enum(['pasta', 'pizza', 'hamburger'], {
+    errorMap: () => ({ message: 'Du må velge et alternativ' }),
   }),
 });
 
