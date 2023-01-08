@@ -37,6 +37,7 @@ const headers = [
 
 module.exports = {
   reactStrictMode: true,
+  poweredByHeader: false,
   images: { domains: ["rickandmortyapi.com"] },
   pageExtensions: ["tsx"],
   transpilePackages: ["ui"],
