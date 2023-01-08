@@ -23,17 +23,17 @@ class MyDocument extends Document {
 
           <meta
             property="og:title"
-            content="Carascent - React Typescript oppgave"
+            content="Carasent - React Typescript oppgave"
           />
           <meta name="author" content="Daniel Fjeldstad" />
           <meta property="og:locale" content="nb_NO" />
           <meta
             name="description"
-            content="Daniel Fjeldstad | Carascent - React Typescript oppgave"
+            content="Daniel Fjeldstad | Carasent - React Typescript oppgave"
           />
           <meta
             property="og:description"
-            content="Daniel Fjeldstad | Carascent - React Typescript oppgave"
+            content="Daniel Fjeldstad | Carasent - React Typescript oppgave"
           />
 
           <meta property="og:url" content="https://www.dfweb.no/" />
