@@ -19,7 +19,7 @@ interface ICharacterId {
 export const Character = ({ id }: ICharacterId) => {
   const { user, isLoading, isError } = useGetSingleCharacter(id);
 
-  if (isError) return <h1>Error ...</h1>;
+  if (isError) return <h1>Feil under henting av API data</h1>;
 
   return (
     <>
