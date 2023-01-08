@@ -1,5 +1,7 @@
 const path = require('node:path');
 
+const csp = `frame-ancestors 'self';report-uri https://dfweb.report-uri.com/r/d/csp/reportOnly;block-all-mixed-content;default-src 'self';script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com;style-src-elem 'self' 'unsafe-inline' dfweb.no;style-src 'self' 'unsafe-inline' dfweb.no cdnjs.cloudflare.com fonts.googleapis.com;object-src 'none';frame-src 'self';child-src 'self';img-src 'self' data: fonts.gstatic.com;font-src 'self' fonts.googleapis.com fonts.gstatic.com;connect-src 'self' fonts.googleapis.com fonts.gstatic.com;manifest-src 'self';base-uri 'self';form-action 'self';media-src 'self';prefetch-src 'self';worker-src 'self' blob:;`;
+
 const headers = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -49,7 +51,7 @@ module.exports = {
     return [
       {
         source: "/(.*)",
-        headers
+        csp
       }
     ];
   }
