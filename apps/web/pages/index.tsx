@@ -8,13 +8,13 @@ import { Button, Character, Header, Input, Form, Radio, Select } from 'ui';
 
 type TFormSchemaType = z.infer<typeof formSchema>;
 
-export type TFormInputs = {
+type TFormInputs = {
   firstName: string;
   gender: string;
   food: 'pasta' | 'pizza' | 'hamburger';
 };
 
-export const formSchema = z.object({
+const formSchema = z.object({
   firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   food: z.enum(['pasta', 'pizza', 'hamburger'], {
