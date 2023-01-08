@@ -1,3 +1,6 @@
+![Codiga Code Grade](https://api.codiga.io/project/35400/score/svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5dc6f7632b354d30bd8a6637d69af48d)](https://www.codacy.com/gh/w3bdesign/carasent-react-typescript/dashboard)
+
 # Kodeøvelse med React og Typescript
 
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
