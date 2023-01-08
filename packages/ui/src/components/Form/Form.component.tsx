@@ -1,18 +1,16 @@
 import { ReactNode } from 'react';
 
-import { FormProvider, SubmitHandler, UseFormReturn } from 'react-hook-form';
+import {
+  FieldValues,
+  FormProvider,
+  SubmitHandler,
+  UseFormReturn,
+} from 'react-hook-form';
 
-type TFormInputs = {
-  firstName: string;
-  gender: string;
-  food: 'pasta' | 'pizza' | 'hamburger';
-};
-
-export interface IFormProps {
+export interface IFormProps<T extends FieldValues> {
   children: ReactNode | ReactNode[];
-  onSubmit: SubmitHandler<TFormInputs>;
-
-  methods: UseFormReturn<TFormInputs>;
+  onSubmit: SubmitHandler<T>;
+  methods: UseFormReturn<T>;
 }
 
 /**
@@ -24,11 +22,11 @@ export interface IFormProps {
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Form = ({
+export const Form = <T extends FieldValues>({
   children,
   onSubmit,
   methods,
-}: IFormProps): JSX.Element => {
+}: IFormProps<T>): JSX.Element => {
   const { handleSubmit } = methods;
 
   return (

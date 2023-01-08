@@ -46,7 +46,7 @@ export default function Home() {
           <div className="max-w-2xl w-full mx-auto px-4 py-16">
             <Header title="Carascent - React / Typescript oppgave" />
             <Character id={2} />
-            <Form onSubmit={onSubmit} methods={methods}>
+            <Form<TFormInputs> onSubmit={onSubmit} methods={methods}>
               <Input name="firstName" labelText="Navn" />
               <Select
                 name="gender"
