@@ -256,5 +256,6 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Forbedre feilmeldinger vist i skjemaet
 -   Se på deploy med Dockerfile
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
+-   Sette opp og integrere CircleCI med feks CodeCov, Chromatic, Cypress og Jest for automatisk testing i skyen før merge av pull requests
 
 </details>
