@@ -16,9 +16,13 @@ export interface IFormProps<T extends FieldValues> {
 /**
  * Form component with react hook form
  * @function Form
+ * 
  * @param { ReactNode | ReactNode[]} children - Form children elements (input, select etc)
  * @param {SubmitHandler<T>} onSubmit - onSubmit handler for form, called with <T>
  * @param {UseFormReturn<T>} methods - methods for form, called with <T>
+ * 
+ * @typedef {{ type: T extends FieldValues; }} IFormProps<T>
+ * @template {IFormProps} T - Pass in TFormInputs (the type of all of the form inputs)
  
  * @returns {JSX.Element} - Rendered component
  */
