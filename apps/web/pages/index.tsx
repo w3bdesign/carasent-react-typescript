@@ -8,12 +8,6 @@ import { Button, Character, Header, Input, Form, Radio, Select } from 'ui';
 
 type TFormSchemaType = z.infer<typeof formSchema>;
 
-type TFormInputs = {
-  firstName: string;
-  gender: string;
-  food: 'pasta' | 'pizza' | 'hamburger';
-};
-
 const formSchema = z.object({
   firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
@@ -23,9 +17,9 @@ const formSchema = z.object({
 });
 
 export default function Home() {
-  const onSubmit = (data: TFormInputs) => setformContent(data);
+  const onSubmit = (data: TFormSchemaType) => setformContent(data);
 
-  const methods = useForm<TFormInputs>({
+  const methods = useForm<TFormSchemaType>({
     resolver: zodResolver(formSchema),
   });
 
@@ -46,7 +40,7 @@ export default function Home() {
           <div className="max-w-2xl w-full mx-auto px-4 py-16">
             <Header title="Carasent - React / Typescript oppgave" />
             <Character id={2} />
-            <Form<TFormInputs> onSubmit={onSubmit} methods={methods}>
+            <Form<TFormSchemaType> onSubmit={onSubmit} methods={methods}>
               <Input name="firstName" labelText="Navn" />
               <Select
                 name="gender"
