@@ -1,24 +1,25 @@
 import { ReactNode } from 'react';
-import { z } from 'zod';
-import {
-  FormProvider,
-  SubmitHandler,
-  useForm,
-  FieldValues,
-} from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
+
+import { FormProvider, SubmitHandler, UseFormReturn } from 'react-hook-form';
+
+type TFormInputs = {
+  firstName: string;
+  gender: string;
+  food: 'pasta' | 'pizza' | 'hamburger';
+};
 
 export interface IFormProps {
-  children: ReactNode;
-  onSubmit: SubmitHandler<any>;
-  formSchema: z.Schema<FieldValues>;
+  children: ReactNode | ReactNode[];
+  onSubmit: SubmitHandler<TFormInputs>;
+
+  methods: UseFormReturn<TFormInputs>;
 }
 
 /**
  * Form component with react hook form
  * @function Form
- * @param {ReactNode} children - Form children elements (input, select etc)
- * @param {SubmitHandler<TFormSchemaType>} onSubmit - onSubmit handler for form
+ * @param { ReactNode | ReactNode[]} children - Form children elements (input, select etc)
+ * @param {SubmitHandler<TFormInputs>} onSubmit - onSubmit handler for form
  
  * @returns {JSX.Element} - Rendered component
  */
@@ -26,11 +27,8 @@ export interface IFormProps {
 export const Form = ({
   children,
   onSubmit,
-  formSchema,
+  methods,
 }: IFormProps): JSX.Element => {
-  const methods = useForm({
-    resolver: zodResolver(formSchema),
-  });
   const { handleSubmit } = methods;
 
   return (

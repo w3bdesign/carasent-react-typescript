@@ -1,11 +1,18 @@
 import { useState } from 'react';
-import { SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 import Head from 'next/head';
 
 import { Button, Character, Header, Input, Form, Radio, Select } from 'ui';
 
 type TFormSchemaType = z.infer<typeof formSchema>;
+
+export type TFormInputs = {
+  firstName: string;
+  gender: string;
+  food: 'pasta' | 'pizza' | 'hamburger';
+};
 
 export const formSchema = z.object({
   firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
@@ -16,8 +23,11 @@ export const formSchema = z.object({
 });
 
 export default function Home() {
-  const onSubmit: SubmitHandler<TFormSchemaType> = (data) =>
-    setformContent(data);
+  const onSubmit = (data: TFormInputs) => setformContent(data);
+
+  const methods = useForm<TFormInputs>({
+    resolver: zodResolver(formSchema),
+  });
 
   const [formContent, setformContent] = useState<TFormSchemaType>();
 
@@ -36,7 +46,7 @@ export default function Home() {
           <div className="max-w-2xl w-full mx-auto px-4 py-16">
             <Header title="Carascent - React / Typescript oppgave" />
             <Character id={2} />
-            <Form formSchema={formSchema} onSubmit={onSubmit}>
+            <Form onSubmit={onSubmit} methods={methods}>
               <Input name="firstName" labelText="Navn" />
               <Select
                 name="gender"
