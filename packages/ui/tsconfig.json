@@ -8,6 +8,6 @@
     "lib": ["ES2019", "DOM"],
     "module": "ESNext",
     "target": "es6",
-    "types": ["jest", "node"],
+    "types": ["jest", "node"]
   }
 }
