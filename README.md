@@ -7,11 +7,11 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 
 ## Frontend
 
- <img src="https://user-images.githubusercontent.com/45217974/210191737-6070a1fe-020f-4970-b8a2-a3cefff2686f.png" alt="Screenshot av prosjekt" />
+ <img src="https://user-images.githubusercontent.com/45217974/211168457-965c3d40-53ea-4ab4-a707-7fc8dca80d7f.png" alt="Screenshot av prosjekt" />
 
 ## Dokumentasjon (Storybook)
 
- <img src="https://user-images.githubusercontent.com/45217974/210192555-6547b16d-d694-40d0-a761-5461dddf8212.png" alt="Storybook dokumentasjon" />
+ <img src="https://user-images.githubusercontent.com/45217974/211168415-300d889e-0b8f-4d0d-993e-a41b005a0f46.png" alt="Storybook dokumentasjon" />
 
 * * *
 

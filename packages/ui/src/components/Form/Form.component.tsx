@@ -1,36 +1,33 @@
 import { ReactNode } from 'react';
-import { z } from 'zod';
-import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 
-type TFormSchemaType = z.infer<typeof formSchema>;
+import {
+  FieldValues,
+  FormProvider,
+  SubmitHandler,
+  UseFormReturn,
+} from 'react-hook-form';
 
-const formSchema = z.object({
-  firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
-  gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
-  food: z.enum(['pasta', 'pizza', 'hamburger'], {
-    errorMap: () => ({ message: 'Du må velge et alternativ' }),
-  }),
-});
-
-export interface IFormProps {
-  children: ReactNode;
-  onSubmit: SubmitHandler<TFormSchemaType>;
+export interface IFormProps<T extends FieldValues> {
+  children: ReactNode | ReactNode[];
+  onSubmit: SubmitHandler<T>;
+  methods: UseFormReturn<T>;
 }
 
 /**
  * Form component with react hook form
  * @function Form
- * @param {ReactNode} children - Form children elements (input, select etc)
- * @param {SubmitHandler<TFormSchemaType>} onSubmit - onSubmit handler for form
+ * @param { ReactNode | ReactNode[]} children - Form children elements (input, select etc)
+ * @param {SubmitHandler<T>} onSubmit - onSubmit handler for form, called with <T>
+ * @param {UseFormReturn<T>} methods - methods for form, called with <T>
  
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Form = ({ children, onSubmit }: IFormProps): JSX.Element => {
-  const methods = useForm<TFormSchemaType>({
-    resolver: zodResolver(formSchema),
-  });
+export const Form = <T extends FieldValues>({
+  children,
+  onSubmit,
+  methods,
+}: IFormProps<T>): JSX.Element => {
   const { handleSubmit } = methods;
 
   return (
