@@ -34,6 +34,7 @@ export const Character = ({ id }: ICharacterId) => {
               alt={user.name}
               width="200"
               height="200"
+              priority
             />
           </>
         ) : null}
