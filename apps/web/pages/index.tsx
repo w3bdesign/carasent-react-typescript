@@ -34,17 +34,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Carascent - React / Typescript oppgave</title>
+        <title>Carasent - React / Typescript oppgave</title>
         <meta
           name="description"
-          content="Carascent - React / Typescript oppgave"
+          content="Carasent - React / Typescript oppgave"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className="bg-gray-100 min-h-screen">
           <div className="max-w-2xl w-full mx-auto px-4 py-16">
-            <Header title="Carascent - React / Typescript oppgave" />
+            <Header title="Carasent - React / Typescript oppgave" />
             <Character id={2} />
             <Form<TFormInputs> onSubmit={onSubmit} methods={methods}>
               <Input name="firstName" labelText="Navn" />
