@@ -1,3 +1,5 @@
+![Codiga Code Grade](https://api.codiga.io/project/35400/score/svg)
+
 # Kodeøvelse med React og Typescript
 
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
