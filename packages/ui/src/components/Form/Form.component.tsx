@@ -11,7 +11,7 @@ export interface IFormProps<T extends FieldValues> {
   children: ReactNode | ReactNode[];
   onSubmit: SubmitHandler<T>;
   methods: UseFormReturn<T>;
-};
+}
 
 /**
  * Form component with react hook form

@@ -4,7 +4,7 @@ export interface IInputProps {
   name: string;
   placeholder?: string;
   labelText: string;
-};
+}
 
 /**
  * Input component used for form input fields

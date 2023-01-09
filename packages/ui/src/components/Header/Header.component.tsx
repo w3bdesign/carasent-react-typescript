@@ -1,6 +1,6 @@
 export interface IHeader {
   title: string;
-};
+}
 
 /**
  * Header component for page title text
