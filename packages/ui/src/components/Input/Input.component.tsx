@@ -1,10 +1,10 @@
 import { useFormContext } from 'react-hook-form';
 
-export type TInputProps = {
+export interface IInputProps {
   name: string;
   placeholder?: string;
   labelText: string;
-};
+}
 
 /**
  * Input component used for form input fields
@@ -20,7 +20,7 @@ export const Input = ({
   name,
   placeholder,
   labelText,
-}: TInputProps): JSX.Element => {
+}: IInputProps): JSX.Element => {
   const {
     register,
     formState: { errors },

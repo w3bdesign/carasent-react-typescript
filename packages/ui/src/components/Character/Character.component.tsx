@@ -4,10 +4,10 @@ import useGetSingleCharacter from '../../hooks/useGetSingleCharacter';
 
 import { Spinner } from '../Spinner';
 
-type TCharacterId = {
+interface ICharacterId {
   id: number;
   priority?: boolean;
-};
+}
 
 /**
  * Character component for displaying name and image for a character
@@ -18,7 +18,7 @@ type TCharacterId = {
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Character = ({ id, priority }: TCharacterId) => {
+export const Character = ({ id, priority }: ICharacterId) => {
   const { user, isLoading, isError } = useGetSingleCharacter(id);
 
   if (isError) return <h1>Feil under henting av API data</h1>;

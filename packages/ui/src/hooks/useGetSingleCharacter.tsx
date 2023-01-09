@@ -1,24 +1,24 @@
 import useSWR from 'swr';
 
-type TUser = {
+interface IUser {
   name: string;
   image: string;
-};
+}
 
-type TDataResponse = {
-  user?: TUser;
+interface IDataResponse {
+  user?: IUser;
   isLoading: boolean;
   isError: { error: Error };
-};
+}
 
 /**
  * Hook for retreieving a single character from API
  * @function useGetSingleCharacter
  * @param {number} id - ID value of character to retrieve
  *
- * @returns {TDataResponse} - Rendered hook
+ * @returns {IDataResponse} - Rendered hook
  */
-const useGetSingleCharacter = (id: number): TDataResponse => {
+const useGetSingleCharacter = (id: number): IDataResponse => {
   const API_URL = process.env.NEXT_PUBLIC_API_URL
     ? process.env.NEXT_PUBLIC_API_URL
     : 'https://rickandmortyapi.com/api'; // Midlertidig fallback for bruk i Docker

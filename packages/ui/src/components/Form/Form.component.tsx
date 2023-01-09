@@ -7,11 +7,11 @@ import {
   UseFormReturn,
 } from 'react-hook-form';
 
-export type TFormProps<T extends FieldValues> = {
+export interface IFormProps<T extends FieldValues> {
   children: ReactNode | ReactNode[];
   onSubmit: SubmitHandler<T>;
   methods: UseFormReturn<T>;
-};
+}
 
 /**
  * Form component with react hook form
@@ -21,8 +21,8 @@ export type TFormProps<T extends FieldValues> = {
  * @param {SubmitHandler<T>} onSubmit - onSubmit handler for form, called with <T>
  * @param {UseFormReturn<T>} methods - methods for form, called with <T>
  * 
- * @typedef {{ type: T extends FieldValues; }} TFormProps<T>
- * @template {TFormProps} T - Pass in TFormInputs (the type of all of the form inputs)
+ * @typedef {{ type: T extends FieldValues; }} IFormProps<T>
+ * @template {IFormProps} T - Pass in TFormInputs (the type of all of the form inputs)
  
  * @returns {JSX.Element} - Rendered component
  */
@@ -31,7 +31,7 @@ export const Form = <T extends FieldValues>({
   children,
   onSubmit,
   methods,
-}: TFormProps<T>): JSX.Element => {
+}: IFormProps<T>): JSX.Element => {
   const { handleSubmit } = methods;
 
   return (
