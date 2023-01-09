@@ -266,11 +266,11 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
     <summary>Klikk for å vise mer</summary>
 
 -   Storybook story for alle komponenter (ikke bare Button)
--   Forbedre Typescript definisjoner, særlig i useGetSingleCharacter
+-   Se om jeg kan Forbedre Typescript definisjoner
 -   Implementere forhåndsinnlasting av data med getStaticProps eller getServerSideProps
 -   Se på validering av API data med Zod som allerede brukes til skjemaet
 -   Forbedre feilmeldinger vist i skjemaet
--   Se på deploy med Dockerfile
+-   Sett opp path alias for ryddigere importeringer
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
 -   Sette opp og integrere DevOps (feks CircleCI) med feks Applitools, CodeCov, Chromatic, Cypress og Jest for automatisk testing i skyen før merge av pull requests
 
