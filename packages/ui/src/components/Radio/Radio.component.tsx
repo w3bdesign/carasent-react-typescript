@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import { useFormContext } from 'react-hook-form';
 
-export interface IRadioProps {
+export type TRadioProps = {
   options: string[];
   labelText: string;
   name: string;
-}
+};
 
 export type TOptionsValue = string;
 
@@ -19,7 +19,7 @@ export type TOptionsValue = string;
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Radio = ({ options, labelText, name, ...rest }: IRadioProps) => {
+export const Radio = ({ options, labelText, name, ...rest }: TRadioProps) => {
   const {
     register,
     formState: { errors },
