@@ -87,7 +87,7 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 
 Du trenger å installere [pnpm](https://pnpm.io) som pakkehåndterer.
 
-Sørg også for å ha [Node](https://nodejs.org/en/) versjon 16 (eller nyere) installert.
+Sørg også for å ha [Node](https://nodejs.org/en/) versjon 16 (ikke nyere, da kan du få feilmeldinger fra Storybook) installert. Alternativt kan du bruke [nvm](https://github.com/nvm-sh/nvm) for å sette Node versjon til versjon 16. 
 
 Git clone eller [last ned Git repository](https://github.com/w3bdesign/carasent-react-typescript/archive/refs/heads/main.zip).
 
