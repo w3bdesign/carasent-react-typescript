@@ -24,6 +24,7 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 -   [Prosjektforklaring](#Prosjektforklaring)
 -   [Mappeoppsett](#Mappeoppsett)
 -   [Installasjon](#Installasjon)
+-   [Docker](#Docker)
 -   [Statehåndtering](#Statehåndtering)
 -   [Teknologivalg](#Teknologivalg)
 -   [TODO](#TODO)
@@ -85,6 +86,10 @@ Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjø
 <details>
     <summary>Klikk for å vise mer</summary>
 
+Du kan kjøre prosjektet lokalt enten via [Docker desktop](https://www.docker.com/products/docker-desktop/) eller [pnpm](https://pnpm.io) og [Node](https://nodejs.org/en/).
+
+Forklaring på hvordan du kjører det via [Docker desktop](https://www.docker.com/products/docker-desktop/) finner du her: [Docker](#Docker).
+
 Du trenger å installere [pnpm](https://pnpm.io) som pakkehåndterer.
 
 Sørg også for å ha [Node](https://nodejs.org/en/) versjon 16 (ikke nyere, da kan du få feilmeldinger fra Storybook) installert. Alternativt kan du bruke [nvm](https://github.com/nvm-sh/nvm) for å sette Node versjon til versjon 16. 
@@ -127,6 +132,13 @@ Vil du kjøre Jest (for unit-testing), kjør:
 ```bash
 pnpm test
 ```
+
+</details>
+
+## Docker
+
+<details>
+    <summary>Klikk for å vise mer</summary>
 
 Ønsker du å bygge et Docker image, sørg for å ha satt opp og installert [Docker desktop](https://www.docker.com/products/docker-desktop/) og kjør kommandoen:
 
