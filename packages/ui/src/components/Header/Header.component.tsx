@@ -1,6 +1,6 @@
 export type THeader = {
   title: string;
-}
+};
 
 /**
  * Header component for page title text

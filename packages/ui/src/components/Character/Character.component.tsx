@@ -7,7 +7,7 @@ import { Spinner } from '../Spinner';
 type TCharacterId = {
   id: number;
   priority?: boolean;
-}
+};
 
 /**
  * Character component for displaying name and image for a character
