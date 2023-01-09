@@ -271,6 +271,7 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Se på validering av API data med Zod som allerede brukes til skjemaet
 -   Forbedre feilmeldinger vist i skjemaet
 -   Sett opp path alias for ryddigere importeringer
+-   Revurder mappestruktur (ref boken React - The Road To Enterprise for inspirasjon)
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
 -   Sette opp og integrere DevOps (feks CircleCI) med feks Applitools, CodeCov, Chromatic, Cypress og Jest for automatisk testing i skyen før merge av pull requests
 
