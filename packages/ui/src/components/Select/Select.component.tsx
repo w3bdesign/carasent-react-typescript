@@ -1,10 +1,10 @@
 import { useFormContext } from 'react-hook-form';
 
-export interface ISelectProps {
+export type TSelectProps = {
   options: string[];
   labelText: string;
   name: string;
-}
+};
 
 type TOptionsValue = string;
 
@@ -18,7 +18,7 @@ type TOptionsValue = string;
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Select = ({ options, labelText, name, ...rest }: ISelectProps) => {
+export const Select = ({ options, labelText, name, ...rest }: TSelectProps) => {
   const {
     register,
     formState: { errors },
