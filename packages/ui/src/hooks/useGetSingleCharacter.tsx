@@ -5,7 +5,7 @@ interface IUser {
   image: string;
 }
 
-interface DataResponse<T> {
+interface IDataResponse {
   user?: IUser;
   isLoading: boolean;
   isError: { error: Error };
@@ -16,9 +16,9 @@ interface DataResponse<T> {
  * @function useGetSingleCharacter
  * @param {number} id - ID value of character to retrieve
  *
- * @returns {DataResponse<T>} - Rendered hook
+ * @returns {IDataResponse} - Rendered hook
  */
-const useGetSingleCharacter = <T,>(id: number): DataResponse<T> => {
+const useGetSingleCharacter = (id: number): IDataResponse => {
   const API_URL = process.env.NEXT_PUBLIC_API_URL
     ? process.env.NEXT_PUBLIC_API_URL
     : 'https://rickandmortyapi.com/api'; // Midlertidig fallback for bruk i Docker
