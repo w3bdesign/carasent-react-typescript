@@ -3,10 +3,10 @@ import { classX } from '../../utils/functions';
 export type TSpinnerColor = 'blue' | 'gray' | 'green' | 'red';
 export type TSpinnerSize = 'standard' | 'large';
 
-export type TSpinnerProps = {
+export interface ISpinnerProps {
   color?: TSpinnerColor;
   size?: TSpinnerSize;
-};
+}
 
 /**
  * Spinner component for displaying loading spinner
@@ -20,7 +20,7 @@ export type TSpinnerProps = {
 export const Spinner = ({
   color = 'blue',
   size = 'standard',
-}: TSpinnerProps) => {
+}: ISpinnerProps) => {
   const baseStyle = 'text-gray-200 mx-auto animate-spin dark:text-gray-600';
   return (
     <div role="status">
