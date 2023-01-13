@@ -7,7 +7,7 @@ describe('Forside', () => {
   });
 
   it(`Button vises på forsiden`, () => {
-    cy.get('[data-cy="submit"]').contains('Submit');
+    cy.get('[data-cy="submit"]').contains('Send');
   });
 
   it('Har ingen a11y feilmeldinger', () => {
