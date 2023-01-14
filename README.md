@@ -3,6 +3,8 @@
 
 # Kodeøvelse med React og Typescript
 
+Hjemmeoppgave gitt av Carasent.
+
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
 Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
 
