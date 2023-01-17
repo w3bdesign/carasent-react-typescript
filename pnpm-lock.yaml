@@ -27,7 +27,7 @@ importers:
       '@storybook/addon-essentials': ^6.5.15
       '@storybook/addon-interactions': ^6.5.15
       '@storybook/addon-links': ^6.5.15
-      '@storybook/builder-vite': ^0.2.6
+      '@storybook/builder-vite': ^0.3.0
       '@storybook/cli': ^6.5.15
       '@storybook/react': ^6.5.15
       '@storybook/testing-library': ^0.0.13
@@ -53,7 +53,7 @@ importers:
       '@storybook/addon-essentials': 6.5.15_e4hofatmg3cr2hwny4zf3kuqx4
       '@storybook/addon-interactions': 6.5.15_e5jpadc73hndupgvstjs3ughyy
       '@storybook/addon-links': 6.5.15_biqbaboplfbrettd7655fr4n2y
-      '@storybook/builder-vite': 0.2.6_ts7ghus6y2a33t4buqvf3dew74
+      '@storybook/builder-vite': 0.3.0_ts7ghus6y2a33t4buqvf3dew74
       '@storybook/cli': 6.5.15_vg4efokf6a2uiu6qnfcmdhwoua
       '@storybook/react': 6.5.15_jwrndqwnbx2d4owsgrmfrzdbbu
       '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
@@ -921,7 +921,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.12.9
     dev: true
@@ -3353,16 +3353,18 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.5_p2fwcaxbionflq6hjivvbcsv5a:
-    resolution: {integrity: sha512-HwAEj/vAP1+hzBfIv9DTCyg+1O0/LG48Up7j1RmJ+pFwjb/wRxzUBco4LqKFKe7SZ0M6IyASNh1oKP3yHnJElA==}
+  /@joshwooding/vite-plugin-react-docgen-typescript/0.2.1_p2fwcaxbionflq6hjivvbcsv5a:
+    resolution: {integrity: sha512-ou4ZJSXMMWHqGS4g8uNRbC5TiTWxAgQZiVucoUrOCWuPrTbkpJbmVyIi9jU72SBry7gQtuMEDp4YR8EEXAg7VQ==}
     peerDependencies:
       typescript: '>= 4.3.x'
-      vite: '>2.0.0-0'
+      vite: ^3.0.0 || ^4.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
-      '@rollup/pluginutils': 4.2.1
       glob: 7.2.3
       glob-promise: 4.2.2_glob@7.2.3
-      magic-string: 0.26.7
+      magic-string: 0.27.0
       react-docgen-typescript: 2.2.2_typescript@4.9.4
       typescript: 4.9.4
       vite: 4.0.3
@@ -3789,14 +3791,6 @@ packages:
       schema-utils: 3.1.1
       source-map: 0.7.4
       webpack: 5.75.0
-    dev: true
-
-  /@rollup/pluginutils/4.2.1:
-    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
-    engines: {node: '>= 8.0.0'}
-    dependencies:
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
     dev: true
 
   /@rushstack/eslint-patch/1.2.0:
@@ -4301,13 +4295,13 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.2.6_ts7ghus6y2a33t4buqvf3dew74:
-    resolution: {integrity: sha512-TwlqJykq5KfM8SmDXWQtUHrYg4XySxwOe3RKud4iGZDYmqPc/ayB9XSF6DR50WgC7gKK7WIVIN+ZcGPphy5zWg==}
+  /@storybook/builder-vite/0.3.0_ts7ghus6y2a33t4buqvf3dew74:
+    resolution: {integrity: sha512-sTnk4P0kkIMjYpQzTij5Ehy4w9rs6hAI1x8qUQt3280E7PLbtmbvKtxNa2dQ+g9BEV3UeYCPOS3puxH3fGwSWA==}
     peerDependencies:
       '@storybook/mdx2-csf': ^0.0.3
-      '@sveltejs/vite-plugin-svelte': ^1.0.0
-      '@vitejs/plugin-vue': ^3.0.0
-      vite: '>= 3.0.0'
+      '@sveltejs/vite-plugin-svelte': ^2.0.0
+      '@vitejs/plugin-vue': ^4.0.0
+      vite: '>= 4.0.0'
       vue-docgen-api: ^4.40.0
     peerDependenciesMeta:
       '@storybook/mdx2-csf':
@@ -4319,7 +4313,7 @@ packages:
       vue-docgen-api:
         optional: true
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.5_p2fwcaxbionflq6hjivvbcsv5a
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.2.1_p2fwcaxbionflq6hjivvbcsv5a
       '@storybook/core-common': 6.5.15_vg4efokf6a2uiu6qnfcmdhwoua
       '@storybook/mdx1-csf': 0.0.4_dojr2aquw55jwdpbannhlirjf4
       '@storybook/node-logger': 6.5.15
@@ -9258,10 +9252,6 @@ packages:
       c8: 7.12.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /estree-walker/2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: true
 
   /esutils/2.0.3:
