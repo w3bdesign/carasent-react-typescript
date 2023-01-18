@@ -159,7 +159,7 @@ importers:
       react: ^18.2.0
       react-dom: 18.2.0
       react-hook-form: ^7.41.5
-      swr: 2.0.0
+      swr: 2.0.1
       tailwindcss: ^3.2.4
       ts-jest: ^29.0.3
       tsconfig: workspace:*
@@ -169,7 +169,7 @@ importers:
       '@hookform/resolvers': 2.9.10_react-hook-form@7.41.5
       next: 13.1.1_pjwopsidmaokadturxaafygjp4
       react-hook-form: 7.41.5_react@18.2.0
-      swr: 2.0.0_react@18.2.0
+      swr: 2.0.1_react@18.2.0
       zod: 3.20.2
     devDependencies:
       '@babel/core': 7.20.12
@@ -15071,6 +15071,16 @@ packages:
 
   /swr/2.0.0_react@18.2.0:
     resolution: {integrity: sha512-IhUx5yPkX+Fut3h0SqZycnaNLXLXsb2ECFq0Y29cxnK7d8r7auY2JWNbCW3IX+EqXUg3rwNJFlhrw5Ye/b6k7w==}
+    engines: {pnpm: '7'}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /swr/2.0.1_react@18.2.0:
+    resolution: {integrity: sha512-6z4FpS9dKAay7axedlStsPahEw25nuMlVh4GHkuPpGptbmEEP8v/+kr0GkAE/7ErUs25U2VFOnZQz3AWfkmXdw==}
     engines: {pnpm: '7'}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
