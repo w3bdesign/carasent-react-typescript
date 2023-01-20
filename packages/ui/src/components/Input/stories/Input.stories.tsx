@@ -1,14 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-// https://storybook.js.org/blog/how-to-build-connected-components-in-storybook/
-
-// https://github.com/react-hook-form/react-hook-form/discussions/7444
-
-// https://storybook.js.org/docs/react/writing-stories/decorators
-
-// https://stackoverflow.com/questions/70416699/storybook-cannot-pass-register-prop-into-stories
-
 interface IInputProps {
   name: string;
   placeholder?: string;
