@@ -34,7 +34,7 @@ export const Select = ({ options, labelText, name, ...rest }: ISelectProps) => {
           </option>
         ))}
         {errors[name] && (
-          <span className="text-red-500 text-xl p-2 block mt-2">
+          <span className="text-red-600 text-xl p-2 block mt-2">
             {String(errors[name]?.message)}
           </span>
         )}
