@@ -26,8 +26,8 @@ export const Select = ({ options, labelText, name, ...rest }: ISelectProps) => {
 
   return (
     <label htmlFor={name} className="block mt-4">
-      <span className="block mb-1 text-gray-600">{labelText}</span>
-      <select id={name} className="w-64" {...register(name)} {...rest}>
+      <span className="block mb-1 text-gray-600 ">{labelText}</span>
+      <select id={name} className="w-64 " {...register(name)} {...rest}>
         {options.map((value: TOptionsValue) => (
           <option value={value} key={value}>
             {value}
