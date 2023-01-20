@@ -267,7 +267,6 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 <details>
     <summary>Klikk for å vise mer</summary>
 
--   Storybook story for alle komponenter (ikke bare Button)
 -   Se om jeg kan Forbedre Typescript definisjoner
 -   Implementere forhåndsinnlasting av data med getStaticProps eller getServerSideProps
 -   Se på validering av API data med Zod som allerede brukes til skjemaet
