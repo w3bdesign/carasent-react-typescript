@@ -52,7 +52,7 @@ export default {
       description: 'Navn på komponent',
     },
     options: {
-      description: 'Primary or secondary button variant',
+      description: 'Array med valg',
       options: ['primary', 'secondary'],
       control: 'array',
     },
