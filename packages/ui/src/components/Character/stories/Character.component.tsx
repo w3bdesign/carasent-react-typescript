@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import React from 'react';
 
-import useGetSingleCharacter from '../../hooks/useGetSingleCharacter';
+import useGetSingleCharacter from '../../../hooks/useGetSingleCharacter';
 
-import { Spinner } from '../Spinner';
+import { Spinner } from '../../Spinner';
 
 export interface ICharacterProps {
   id: number;
@@ -18,7 +18,7 @@ export interface ICharacterProps {
  * @returns {JSX.Element} - Rendered component
  */
 
-export const Character = ({ id, priority }: ICharacterProps) => {
+export const Character = ({ id }: ICharacterProps) => {
   const { user, isLoading, isError } = useGetSingleCharacter(id);
 
   if (isError) return <h1>Feil under henting av API data</h1>;
@@ -30,14 +30,7 @@ export const Character = ({ id, priority }: ICharacterProps) => {
         {user ? (
           <>
             <h2 className="text-xl text-center font-bold p-2">{user.name}</h2>
-            <Image
-              className="mx-auto p-2"
-              src={user.image}
-              alt={user.name}
-              width="200"
-              height="200"
-              priority={priority}
-            />
+            <img className="mx-auto p-2" src={user.image} alt={user.name} />
           </>
         ) : null}
       </section>

@@ -32,7 +32,7 @@ export const Radio = ({ options, labelText, name, ...rest }: IRadioProps) => {
           <div className="block mt-4">
             <legend className="block mb-1 text-gray-600">{labelText}</legend>
           </div>
-          {options.map((value: TOptionsValue) => (
+          {options?.map((value: TOptionsValue) => (
             <Fragment key={value}>
               <div className="flex items-center mb-4">
                 <input
@@ -53,9 +53,8 @@ export const Radio = ({ options, labelText, name, ...rest }: IRadioProps) => {
             </Fragment>
           ))}
         </fieldset>
-
         {errors[name] && (
-          <span className="text-red-500 text-xl p-2 block mt-2">
+          <span className="text-red-600 text-xl p-2 block mt-2">
             {String(errors[name]?.message)}
           </span>
         )}
