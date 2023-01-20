@@ -1,7 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
-import 'tailwindcss/tailwind.css';
 
 interface ISelectProps {
   options: string[];

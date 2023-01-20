@@ -15,7 +15,9 @@ const Radio = ({ name, options, labelText }: IRadioProps): JSX.Element => {
       <div className="mx-auto text-center w-64">
         <fieldset>
           <div className="block mt-4">
-            <legend className="block mb-1 text-gray-600">{labelText}</legend>
+            <legend className="block mb-1 text-gray-600">
+              {name} {labelText}
+            </legend>
           </div>
           {options?.map((value: TOptionsValue) => (
             <Fragment key={value}>
@@ -73,7 +75,7 @@ const Template: ComponentStory<typeof Radio> = ({
 export const Primary = Template.bind({});
 
 Primary.args = {
-  name: 'Tekst',
+  name: 'Label',
   options: ['Option #1', 'Option #2'],
-  labelText: 'Label tekst',
+  labelText: 'Tekst',
 };
