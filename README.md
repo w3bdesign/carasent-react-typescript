@@ -8,6 +8,8 @@ Hjemmeoppgave gitt av Carasent.
 Hensikten med oppgaven er å vise kodepatterns og valg av pakker, rammeverk og bibliotek.
 Du står fritt til å strukturere prosjektet, velge pakker, rammeverk og bibliotek.
 
+Løsningen skal ikke ferdigstilles.
+
 Sett opp et frontendprosjekt med React og Typescript. Prosjektet skal kunne kjøres lokalt.
 
 ## Frontend
