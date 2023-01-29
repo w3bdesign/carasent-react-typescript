@@ -272,7 +272,6 @@ Nå kan du åpne <http://localhost:3333> i nettleseren.
 -   Se om jeg kan Forbedre Typescript definisjoner
 -   Implementere forhåndsinnlasting av data med getStaticProps eller getServerSideProps
 -   Se på validering av API data med Zod som allerede brukes til skjemaet
--   Forbedre feilmeldinger vist i skjemaet
 -   Sett opp path alias for ryddigere importeringer
 -   Revurder mappestruktur (ref boken React - The Road To Enterprise for inspirasjon)
 -   Implementert statehåndtering med en custom Context hook med Typescript for bruk i resten av prosjektet
