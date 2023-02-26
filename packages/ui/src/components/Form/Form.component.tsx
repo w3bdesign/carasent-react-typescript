@@ -32,6 +32,7 @@ export const Form = <T extends FieldValues>({
   onSubmit,
   methods,
 }: IFormProps<T>): JSX.Element => {
+  
   const { handleSubmit } = methods;
 
   return (
