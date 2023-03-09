@@ -7,7 +7,7 @@ type TClassArgs = (string | (string | boolean)[])[];
  * @returns {string} - String of merged classnames
  */
 
-export const classX = (...args: TClassArgs): string =>
+export const classX = (...args: TClassArgs) =>
   args
     .flat()
     .filter((x) => x !== null && x !== undefined && typeof x !== 'boolean')
