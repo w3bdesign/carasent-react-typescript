@@ -75,6 +75,7 @@ importers:
       '@babel/core': ^7.20.12
       '@hookform/resolvers': ^2.9.10
       '@tailwindcss/forms': 0.5.3
+      '@tanstack/react-query': ^4.26.1
       '@tanstack/react-query-devtools': ^4.26.1
       '@types/node': 18.11.18
       '@types/react': 18.0.28
@@ -107,6 +108,7 @@ importers:
       zod: 3.21.4
     devDependencies:
       '@babel/core': 7.21.0
+      '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-devtools': 4.26.1_brdhmlf72zuns3lsk66phyptty
       '@types/node': 18.11.18
       '@types/react': 18.0.28
