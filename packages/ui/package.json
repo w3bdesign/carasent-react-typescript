@@ -33,7 +33,7 @@
     "tailwindcss": "^3.2.7",
     "ts-jest": "^29.0.5",
     "tsconfig": "workspace:*",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
