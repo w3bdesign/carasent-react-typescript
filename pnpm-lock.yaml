@@ -88,7 +88,7 @@ importers:
       next: 13.2.4
       react: 18.2.0
       react-dom: 18.2.0
-      react-error-boundary: ^3.1.4
+      react-error-boundary: ^4.0.0
       react-hook-form: ^7.42.1
       swr: ^2.0.2
       tsconfig: workspace:*
@@ -117,7 +117,7 @@ importers:
       cypress-axe: 1.4.0_wdex5n6s57cykgaett3qxdgmwe
       eslint: 8.36.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      react-error-boundary: 3.1.4_react@18.2.0
+      react-error-boundary: 4.0.0_react@18.2.0
       tsconfig: link:../../packages/tsconfig
       typescript: 5.0.2
 
@@ -133,7 +133,7 @@ importers:
       eslint: 8.35.0
       eslint-config-next: 13.2.4_byynos7ffx3cepxtk6gvolkky4
       eslint-config-prettier: 8.7.0_eslint@8.35.0
-      eslint-config-turbo: 0.0.9_eslint@8.35.0
+      eslint-config-turbo: 0.0.10_eslint@8.35.0
       eslint-plugin-react: 7.32.2_eslint@8.35.0
     devDependencies:
       typescript: 5.0.2
@@ -7721,13 +7721,13 @@ packages:
       eslint: 8.35.0
     dev: false
 
-  /eslint-config-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-j1cTdx3tRmKo0csyfQKhpuT8dynK9oddbK5nmrShoMpXI2qMbxHLYH7MWAid4FmJN8rYympy3VKw5U63Yazycg==}
+  /eslint-config-turbo/0.0.10_eslint@8.35.0:
+    resolution: {integrity: sha512-o4ULFZYM1OihSd63eDGEuy9rt6tW4ma6xnW9grnr44BoJwKaGQko2aka9kfqQs0vtmwD1++Os3ThPHETmzkFzA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.35.0
-      eslint-plugin-turbo: 0.0.9_eslint@8.35.0
+      eslint-plugin-turbo: 0.0.10_eslint@8.35.0
     dev: false
 
   /eslint-import-resolver-node/0.3.7:
@@ -8016,8 +8016,8 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
-  /eslint-plugin-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-fEsuSnYU3GLtT+s66mUuzDL1LaSieIx5uk3tPO0ToGv7hI2XzOfP24aPkQItTBGl7kq2JaVkRzPwcnfz8hkp0w==}
+  /eslint-plugin-turbo/0.0.10_eslint@8.35.0:
+    resolution: {integrity: sha512-T7QRwF4rjBQCJD9AHLHn9ShtHCHNkfIZW5Oio92WtQYhoU5jZCU3ynU+ONFXLuvoUx4dJ19WergIyHL+DwL2+g==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -12860,9 +12860,8 @@ packages:
       react-is: 17.0.2
     dev: true
 
-  /react-error-boundary/3.1.4_react@18.2.0:
-    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
-    engines: {node: '>=10', npm: '>=6'}
+  /react-error-boundary/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-vNbTyivmwBxCpJA68Ry55rJhZMzJSB+egkEm8hkEzbEBJLsJp5054zEVpoK/8ndxt6B+dvEA2LDw33xUfvE8og==}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
