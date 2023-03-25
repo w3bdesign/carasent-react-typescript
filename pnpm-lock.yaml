@@ -73,12 +73,12 @@ importers:
   apps/web:
     specifiers:
       '@babel/core': ^7.20.12
-      '@hookform/resolvers': ^2.9.10
+      '@hookform/resolvers': ^3.0.0
       '@tailwindcss/forms': 0.5.3
       '@tanstack/react-query': ^4.26.1
       '@tanstack/react-query-devtools': ^4.26.1
       '@types/node': 18.11.18
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       cypress: ^12.4.0
       cypress-axe: ^1.3.0
@@ -88,7 +88,7 @@ importers:
       next: 13.2.4
       react: 18.2.0
       react-dom: 18.2.0
-      react-error-boundary: ^3.1.4
+      react-error-boundary: ^4.0.0
       react-hook-form: ^7.42.1
       swr: ^2.0.2
       tsconfig: workspace:*
@@ -96,7 +96,7 @@ importers:
       ui: workspace:*
       zod: ^3.20.2
     dependencies:
-      '@hookform/resolvers': 2.9.11_react-hook-form@7.43.5
+      '@hookform/resolvers': 3.0.0_react-hook-form@7.43.5
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
       eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
       next: 13.2.4_6m24vuloj5ihw4zc5lbsktc4fu
@@ -111,13 +111,13 @@ importers:
       '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-devtools': 4.26.1_brdhmlf72zuns3lsk66phyptty
       '@types/node': 18.11.18
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       cypress: 12.7.0
       cypress-axe: 1.4.0_wdex5n6s57cykgaett3qxdgmwe
       eslint: 8.36.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      react-error-boundary: 3.1.4_react@18.2.0
+      react-error-boundary: 4.0.0_react@18.2.0
       tsconfig: link:../../packages/tsconfig
       typescript: 5.0.2
 
@@ -133,7 +133,7 @@ importers:
       eslint: 8.35.0
       eslint-config-next: 13.2.4_byynos7ffx3cepxtk6gvolkky4
       eslint-config-prettier: 8.7.0_eslint@8.35.0
-      eslint-config-turbo: 0.0.9_eslint@8.35.0
+      eslint-config-turbo: 0.0.10_eslint@8.35.0
       eslint-plugin-react: 7.32.2_eslint@8.35.0
     devDependencies:
       typescript: 5.0.2
@@ -146,7 +146,7 @@ importers:
       '@babel/core': ^7.20.12
       '@babel/preset-env': ^7.20.2
       '@babel/preset-react': ^7.18.6
-      '@hookform/resolvers': ^2.9.10
+      '@hookform/resolvers': ^3.0.0
       '@tailwindcss/forms': ^0.5.3
       '@testing-library/jest-dom': ^5.16.5
       '@testing-library/react': ^14.0.0
@@ -167,17 +167,17 @@ importers:
       react: ^18.2.0
       react-dom: 18.2.0
       react-hook-form: ^7.42.1
-      swr: 2.1.0
+      swr: 2.1.1
       tailwindcss: ^3.2.7
       ts-jest: ^29.0.5
       tsconfig: workspace:*
       typescript: ^5.0.0
       zod: ^3.20.2
     dependencies:
-      '@hookform/resolvers': 2.9.11_react-hook-form@7.43.5
+      '@hookform/resolvers': 3.0.0_react-hook-form@7.43.5
       next: 13.2.3_6m24vuloj5ihw4zc5lbsktc4fu
       react-hook-form: 7.43.5_react@18.2.0
-      swr: 2.1.0_react@18.2.0
+      swr: 2.1.1_react@18.2.0
       zod: 3.21.4
     devDependencies:
       '@babel/core': 7.21.0
@@ -2064,8 +2064,8 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@hookform/resolvers/2.9.11_react-hook-form@7.43.5:
-    resolution: {integrity: sha512-bA3aZ79UgcHj7tFV7RlgThzwSSHZgvfbt2wprldRkYBcMopdMvHyO17Wwp/twcJasNFischFfS7oz8Katz8DdQ==}
+  /@hookform/resolvers/3.0.0_react-hook-form@7.43.5:
+    resolution: {integrity: sha512-SQPefakODpyq25b/phHXDKCdRrEfPcCXV7B4nAa139wE1DxufYbbNAjeo0T04ZXBokRxZ+wD8iA1kkVMa3QwjQ==}
     peerDependencies:
       react-hook-form: ^7.0.0
     dependencies:
@@ -4641,6 +4641,14 @@ packages:
 
   /@types/react/18.0.28:
     resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/react/18.0.29:
+    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -7721,13 +7729,13 @@ packages:
       eslint: 8.35.0
     dev: false
 
-  /eslint-config-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-j1cTdx3tRmKo0csyfQKhpuT8dynK9oddbK5nmrShoMpXI2qMbxHLYH7MWAid4FmJN8rYympy3VKw5U63Yazycg==}
+  /eslint-config-turbo/0.0.10_eslint@8.35.0:
+    resolution: {integrity: sha512-o4ULFZYM1OihSd63eDGEuy9rt6tW4ma6xnW9grnr44BoJwKaGQko2aka9kfqQs0vtmwD1++Os3ThPHETmzkFzA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.35.0
-      eslint-plugin-turbo: 0.0.9_eslint@8.35.0
+      eslint-plugin-turbo: 0.0.10_eslint@8.35.0
     dev: false
 
   /eslint-import-resolver-node/0.3.7:
@@ -8016,8 +8024,8 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
-  /eslint-plugin-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-fEsuSnYU3GLtT+s66mUuzDL1LaSieIx5uk3tPO0ToGv7hI2XzOfP24aPkQItTBGl7kq2JaVkRzPwcnfz8hkp0w==}
+  /eslint-plugin-turbo/0.0.10_eslint@8.35.0:
+    resolution: {integrity: sha512-T7QRwF4rjBQCJD9AHLHn9ShtHCHNkfIZW5Oio92WtQYhoU5jZCU3ynU+ONFXLuvoUx4dJ19WergIyHL+DwL2+g==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -12860,9 +12868,8 @@ packages:
       react-is: 17.0.2
     dev: true
 
-  /react-error-boundary/3.1.4_react@18.2.0:
-    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
-    engines: {node: '>=10', npm: '>=6'}
+  /react-error-boundary/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-vNbTyivmwBxCpJA68Ry55rJhZMzJSB+egkEm8hkEzbEBJLsJp5054zEVpoK/8ndxt6B+dvEA2LDw33xUfvE8og==}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
@@ -14136,6 +14143,16 @@ packages:
 
   /swr/2.1.0_react@18.2.0:
     resolution: {integrity: sha512-4hYl5p3/KalQ1MORealM79g/DtLohmud6yyfXw5l4wjtFksYUnocRFudvyaoUtgj3FrVNK9lS25Av9dsZYvz0g==}
+    engines: {pnpm: '7'}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /swr/2.1.1_react@18.2.0:
+    resolution: {integrity: sha512-OgwqZmpjOgxNbaez6qzTVqiRWn+Ti5Uzmktk2c01Afqwc50q6z15DeNC8m9G1aY+w2BwEAsKvk59iq6aHlhgyw==}
     engines: {pnpm: '7'}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
