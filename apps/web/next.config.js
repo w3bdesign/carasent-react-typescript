@@ -44,6 +44,9 @@ module.exports = {
   output: "standalone",
   experimental: {
     outputFileTracingRoot: path.join(__dirname, '../..'),
+    appDir: false,
+  },
+    
   },
   async headers() {
     return [
