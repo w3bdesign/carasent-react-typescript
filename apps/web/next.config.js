@@ -47,7 +47,7 @@ module.exports = {
     appDir: false,
   },
     
-  },
+  
   async headers() {
     return [
       {
