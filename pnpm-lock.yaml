@@ -210,8 +210,8 @@ importers:
         specifier: ^7.43.9
         version: 7.43.9(react@18.2.0)
       swr:
-        specifier: 2.2.3
-        version: 2.2.3(react@18.2.0)
+        specifier: 2.2.4
+        version: 2.2.4(react@18.2.0)
       zod:
         specifier: ^3.21.4
         version: 3.21.4
@@ -15924,8 +15924,8 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
-  /swr@2.2.3(react@18.2.0):
-    resolution: {integrity: sha512-yzZkZSdemplWk/3lH+3/wSNIklKX1YrPveN06Obew2XXE8fsPkFFSth1ub86MT/sPQcZCAjWIXISwgUVRbZHaQ==}
+  /swr@2.2.4(react@18.2.0):
+    resolution: {integrity: sha512-njiZ/4RiIhoOlAaLYDqwz5qH/KZXVilRLvomrx83HjzCWTfa+InyfAjv05PSFxnmLzZkNO9ZfvgoqzAaEI4sGQ==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
     dependencies:
