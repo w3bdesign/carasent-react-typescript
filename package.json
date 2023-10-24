@@ -20,7 +20,7 @@
     "turbo": "^1.10.14"
   },
   "engines": {
-    "node": "16"
+    "node": "20"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
