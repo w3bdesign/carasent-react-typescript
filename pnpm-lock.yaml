@@ -107,8 +107,8 @@ importers:
         specifier: ^3.1.0
         version: 3.3.1(react-hook-form@7.46.2)
       '@tailwindcss/forms':
-        specifier: 0.5.6
-        version: 0.5.6(tailwindcss@3.3.3)
+        specifier: 0.5.7
+        version: 0.5.7(tailwindcss@3.3.3)
       eslint-config-next:
         specifier: 14.0.2
         version: 14.0.2(eslint@8.53.0)(typescript@5.2.2)
@@ -4444,6 +4444,16 @@ packages:
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.3
+    dev: true
+
+  /@tailwindcss/forms@0.5.7(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.3.3
+    dev: false
 
   /@tanstack/query-core@5.0.0:
     resolution: {integrity: sha512-Y1BpiA6BblJd/UlVqxEVeAG7IACn568YJuTTItAiecBI7En+33g780kg+/8lhgl+BzcUPN7o+NjBrSRGJoemyQ==}
