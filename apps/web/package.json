@@ -30,7 +30,7 @@
     "typescript": "^5.0.4",
     "@types/node": "20.10.4",
     "@types/react": "18.2.45",
-    "@types/react-dom": "18.2.17",
+    "@types/react-dom": "18.2.18",
     "cypress": "^13.0.0",
     "cypress-axe": "^1.4.0",
     "react-error-boundary": "^4.0.4",
