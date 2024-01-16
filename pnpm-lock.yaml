@@ -268,8 +268,8 @@ importers:
         specifier: ^8.4.31
         version: 8.4.31
       postcss-loader:
-        specifier: ^7.3.3
-        version: 7.3.3(postcss@8.4.31)(typescript@5.2.2)(webpack@5.88.2)
+        specifier: ^8.0.0
+        version: 8.0.0(postcss@8.4.31)(typescript@5.2.2)(webpack@5.88.2)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -7035,8 +7035,8 @@ packages:
       yaml: 1.10.2
     dev: true
 
-  /cosmiconfig@8.3.6(typescript@5.2.2):
-    resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
+  /cosmiconfig@9.0.0(typescript@5.2.2):
+    resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=4.9.5'
@@ -7044,10 +7044,10 @@ packages:
       typescript:
         optional: true
     dependencies:
+      env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      path-type: 4.0.0
       typescript: 5.2.2
     dev: true
 
@@ -7798,6 +7798,11 @@ packages:
   /entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
+    dev: true
+
+  /env-paths@2.2.1:
+    resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
+    engines: {node: '>=6'}
     dev: true
 
   /envinfo@7.10.0:
@@ -12847,14 +12852,14 @@ packages:
       webpack: 4.47.0
     dev: true
 
-  /postcss-loader@7.3.3(postcss@8.4.31)(typescript@5.2.2)(webpack@5.88.2):
-    resolution: {integrity: sha512-YgO/yhtevGO/vJePCQmTxiaEwER94LABZN0ZMT4A0vsak9TpO+RvKRs7EmJ8peIlB9xfXCsS7M8LjqncsUZ5HA==}
-    engines: {node: '>= 14.15.0'}
+  /postcss-loader@8.0.0(postcss@8.4.31)(typescript@5.2.2)(webpack@5.88.2):
+    resolution: {integrity: sha512-+RiNlmYd1aXYv6QSBOAu6n9eJYy0ydyXTfjljAJ3vFU6MMo2M552zTVcBpBH+R5aAeKaYVG1K9UEyAVsLL1Qjg==}
+    engines: {node: '>= 18.12.0'}
     peerDependencies:
       postcss: ^7.0.0 || ^8.0.1
       webpack: ^5.0.0
     dependencies:
-      cosmiconfig: 8.3.6(typescript@5.2.2)
+      cosmiconfig: 9.0.0(typescript@5.2.2)
       jiti: 1.20.0
       postcss: 8.4.31
       semver: 7.5.4
