@@ -132,7 +132,7 @@ importers:
         version: link:../../packages/ui
       zod:
         specifier: ^3.21.4
-        version: 3.22.2
+        version: 3.22.4
     devDependencies:
       '@babel/core':
         specifier: ^7.21.5
@@ -214,7 +214,7 @@ importers:
         version: 2.2.5(react@18.2.0)
       zod:
         specifier: ^3.22.2
-        version: 3.22.2
+        version: 3.22.4
     devDependencies:
       '@babel/core':
         specifier: ^7.23.0
@@ -16627,8 +16627,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zod@3.22.2:
-    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
 
   /zwitch@1.0.5:
