@@ -57,7 +57,7 @@ importers:
         version: 6.5.16(react-dom@18.2.0)(react@18.2.0)
       '@storybook/builder-vite':
         specifier: ^0.4.0
-        version: 0.4.2(@vitejs/plugin-react@4.2.1)(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.4)
+        version: 0.4.2(@vitejs/plugin-react@4.2.1)(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.5)
       '@storybook/cli':
         specifier: ^6.5.15
         version: 6.5.16(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
@@ -78,7 +78,7 @@ importers:
         version: 18.2.19
       '@vitejs/plugin-react':
         specifier: ^4.0.0
-        version: 4.2.1(vite@5.1.4)
+        version: 4.2.1(vite@5.1.5)
       autoprefixer:
         specifier: ^10.4.13
         version: 10.4.18(postcss@8.4.35)
@@ -99,7 +99,7 @@ importers:
         version: link:../../packages/ui
       vite:
         specifier: ^5.0.0
-        version: 5.1.4
+        version: 5.1.5
 
   apps/web:
     dependencies:
@@ -2919,7 +2919,7 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@joshwooding/vite-plugin-react-docgen-typescript@0.2.1(typescript@5.3.3)(vite@5.1.4):
+  /@joshwooding/vite-plugin-react-docgen-typescript@0.2.1(typescript@5.3.3)(vite@5.1.5):
     resolution: {integrity: sha512-ou4ZJSXMMWHqGS4g8uNRbC5TiTWxAgQZiVucoUrOCWuPrTbkpJbmVyIi9jU72SBry7gQtuMEDp4YR8EEXAg7VQ==}
     peerDependencies:
       typescript: '>= 4.3.x'
@@ -2933,7 +2933,7 @@ packages:
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.3.3)
       typescript: 5.3.3
-      vite: 5.1.4
+      vite: 5.1.5
     dev: true
 
   /@jridgewell/gen-mapping@0.3.4:
@@ -2968,8 +2968,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@jridgewell/trace-mapping@0.3.24:
-    resolution: {integrity: sha512-+VaWXDa6+l6MhflBvVXjIEAzb59nQ2JUK3bwRp2zRpPtU+8TFRy9Gg/5oIcNlkEL5PGlBFGfemUVvIgLnTzq7Q==}
+  /@jridgewell/trace-mapping@0.3.25:
+    resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -3802,7 +3802,7 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite@0.4.2(@vitejs/plugin-react@4.2.1)(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.4):
+  /@storybook/builder-vite@0.4.2(@vitejs/plugin-react@4.2.1)(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.5):
     resolution: {integrity: sha512-KBBiDdYCK0BCOns8iCVrtzaIiYQF9NjwQ7u3HY/a0bmAuaXPd9m3t6Tvp2jNwmdRAtHOHXnM+d6ROJAI77DCYg==}
     peerDependencies:
       '@storybook/mdx2-csf': '>=1.0.0-next.0'
@@ -3826,13 +3826,13 @@ packages:
       vue-docgen-api:
         optional: true
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.2.1(typescript@5.3.3)(vite@5.1.4)
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.2.1(typescript@5.3.3)(vite@5.1.5)
       '@storybook/core-common': 6.5.16(eslint@8.4.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
       '@storybook/mdx1-csf': 1.0.0-next.0(react@18.2.0)
       '@storybook/node-logger': 6.5.16
       '@storybook/semver': 7.3.2
       '@storybook/source-loader': 6.5.16(react-dom@18.2.0)(react@18.2.0)
-      '@vitejs/plugin-react': 4.2.1(vite@5.1.4)
+      '@vitejs/plugin-react': 4.2.1(vite@5.1.5)
       ast-types: 0.14.2
       es-module-lexer: 0.9.3
       glob: 7.2.3
@@ -3841,7 +3841,7 @@ packages:
       react-docgen: 6.0.0-alpha.3
       slash: 3.0.0
       sveltedoc-parser: 4.2.1
-      vite: 5.1.4
+      vite: 5.1.5
     transitivePeerDependencies:
       - eslint
       - react
@@ -4972,7 +4972,7 @@ packages:
     resolution: {integrity: sha512-JNvhIEyxVW6EoMIFIvj93ZOywYFatlpu9deeH6eSx6PE3WHYvHaQtmHmQeNw7aA81bYGBPPQqdtBm6b1SsQMmA==}
     dependencies:
       '@types/eslint': 8.44.3
-      '@types/estree': 1.0.2
+      '@types/estree': 1.0.5
     dev: true
 
   /@types/eslint-scope@3.7.7:
@@ -4985,7 +4985,7 @@ packages:
   /@types/eslint@8.44.3:
     resolution: {integrity: sha512-iM/WfkwAhwmPff3wZuPLYiHX18HI24jU8k1ZSH7P8FHwxTjZ2P6CoX2wnF43oprR+YXJM6UUxATkNvyv/JHd+g==}
     dependencies:
-      '@types/estree': 1.0.2
+      '@types/estree': 1.0.5
       '@types/json-schema': 7.0.13
     dev: true
 
@@ -4998,10 +4998,6 @@ packages:
 
   /@types/estree@0.0.51:
     resolution: {integrity: sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==}
-    dev: true
-
-  /@types/estree@1.0.2:
-    resolution: {integrity: sha512-VeiPZ9MMwXjO32/Xu7+OwflfmeoRwkE/qzndw42gGtgJwZopBnzy2gD//NN1+go1mADzkDcqf/KnFRSjTJ8xJA==}
     dev: true
 
   /@types/estree@1.0.5:
@@ -5341,7 +5337,7 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vitejs/plugin-react@4.2.1(vite@5.1.4):
+  /@vitejs/plugin-react@4.2.1(vite@5.1.5):
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -5352,7 +5348,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.24.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.1.4
+      vite: 5.1.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -15026,7 +15022,7 @@ packages:
       uglify-js:
         optional: true
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.24
+      '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
@@ -15865,8 +15861,8 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite@5.1.4:
-    resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==}
+  /vite@5.1.5:
+    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -16070,7 +16066,7 @@ packages:
         optional: true
     dependencies:
       '@types/eslint-scope': 3.7.5
-      '@types/estree': 1.0.2
+      '@types/estree': 1.0.5
       '@webassemblyjs/ast': 1.11.6
       '@webassemblyjs/wasm-edit': 1.11.6
       '@webassemblyjs/wasm-parser': 1.11.6
