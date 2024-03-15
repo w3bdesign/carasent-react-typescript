@@ -139,10 +139,10 @@ importers:
         version: 7.24.0
       '@tanstack/react-query':
         specifier: ^5.0.0
-        version: 5.28.2(react@18.2.0)
+        version: 5.28.4(react@18.2.0)
       '@tanstack/react-query-devtools':
         specifier: ^5.0.0
-        version: 5.28.3(@tanstack/react-query@5.28.2)(react@18.2.0)
+        version: 5.28.4(@tanstack/react-query@5.28.4)(react@18.2.0)
       '@types/node':
         specifier: 20.11.27
         version: 20.11.27
@@ -3340,31 +3340,31 @@ packages:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.4.1
 
-  /@tanstack/query-core@5.28.2:
-    resolution: {integrity: sha512-IvRjNUzoJ0Hn5OSpFkPtMY00zEm+EauCnSKOx/PJPOpME6ucM5hSisFdnIN9oU3WDw5lv6OFWDSpG0rM6lF9rw==}
+  /@tanstack/query-core@5.28.4:
+    resolution: {integrity: sha512-uQZqOFqLWUvXNIQZ63XdKzg22NtHzgCBUfDmjDHi3BoF+nUYeBNvMi/xFPtFrMhqRzG2Ir4mYaGsWZzmiEjXpA==}
     dev: true
 
   /@tanstack/query-devtools@5.28.3:
     resolution: {integrity: sha512-Kxch05PVnxLUAyRiz2gXYQhXATHfXbQQwvz858YPjYYQyi7yk8SyS9Z5hyw90bRb0pd3rjelXyGFCsNMWvEghw==}
     dev: true
 
-  /@tanstack/react-query-devtools@5.28.3(@tanstack/react-query@5.28.2)(react@18.2.0):
-    resolution: {integrity: sha512-gHg4u6hBrKynv/zdjjVqfx/4WB0R3cHuEHFF94Jv8NLyohsuSI96Scbhm/GXBC/jsh1i2NYNX69XG2HFf3Efyw==}
+  /@tanstack/react-query-devtools@5.28.4(@tanstack/react-query@5.28.4)(react@18.2.0):
+    resolution: {integrity: sha512-oS+3INjCIX4Nkh0IAV6LH2mgLqJjkcd/DDxp8dwdWCGloLrz6IBj+bOuuI2wD0zb8r7l45wIAYIhl4Z6XyTupQ==}
     peerDependencies:
-      '@tanstack/react-query': ^5.28.2
+      '@tanstack/react-query': ^5.28.4
       react: ^18.0.0
     dependencies:
       '@tanstack/query-devtools': 5.28.3
-      '@tanstack/react-query': 5.28.2(react@18.2.0)
+      '@tanstack/react-query': 5.28.4(react@18.2.0)
       react: 18.2.0
     dev: true
 
-  /@tanstack/react-query@5.28.2(react@18.2.0):
-    resolution: {integrity: sha512-t3th5v5bzyeiw+fzwKwbGVT3ux2qW4wDJRrLy4YLok0qrrEQUYcZ3xsC7dlxkPbFInrIGJ8qLsm1A2sbyy2XZA==}
+  /@tanstack/react-query@5.28.4(react@18.2.0):
+    resolution: {integrity: sha512-BErcoB/QQG6YwLSUKnaGxF+lSc270RH2w3kMBpG0i4YzDCsFs2pdxPX1WVknQvFk9bNgukMb158hc2Zb4SdwSA==}
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-core': 5.28.2
+      '@tanstack/query-core': 5.28.4
       react: 18.2.0
     dev: true
 
@@ -3677,6 +3677,12 @@ packages:
 
   /@types/node@20.11.27:
     resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.11.28:
+    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -7822,7 +7828,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.28
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
