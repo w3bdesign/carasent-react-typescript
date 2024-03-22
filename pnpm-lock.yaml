@@ -57,7 +57,7 @@ importers:
         version: 8.0.4(react@18.2.0)
       '@storybook/builder-vite':
         specifier: ^8.0.0
-        version: 8.0.4(typescript@5.4.3)(vite@5.2.2)
+        version: 8.0.4(typescript@5.4.3)(vite@5.2.3)
       '@storybook/cli':
         specifier: ^8.0.0
         version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
@@ -78,7 +78,7 @@ importers:
         version: 18.2.22
       '@vitejs/plugin-react':
         specifier: ^4.0.0
-        version: 4.2.1(vite@5.2.2)
+        version: 4.2.1(vite@5.2.3)
       autoprefixer:
         specifier: ^10.4.13
         version: 10.4.18(postcss@8.4.38)
@@ -99,7 +99,7 @@ importers:
         version: link:../../packages/ui
       vite:
         specifier: ^5.0.0
-        version: 5.2.2
+        version: 5.2.3
 
   apps/web:
     dependencies:
@@ -2941,7 +2941,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/builder-vite@8.0.4(typescript@5.4.3)(vite@5.2.2):
+  /@storybook/builder-vite@8.0.4(typescript@5.4.3)(vite@5.2.3):
     resolution: {integrity: sha512-Whb001bGkoGQ6/byp9QTQJ4NO61Qa5bh1p5WEEMJ5wYvHm83b+B/IwwilUfU5mL9bJB/RjbwyKcSQqGP6AxMzA==}
     peerDependencies:
       '@preact/preset-vite': '*'
@@ -2974,7 +2974,7 @@ packages:
       magic-string: 0.30.8
       ts-dedent: 2.2.0
       typescript: 5.4.3
-      vite: 5.2.2
+      vite: 5.2.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3930,7 +3930,7 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vitejs/plugin-react@4.2.1(vite@5.2.2):
+  /@vitejs/plugin-react@4.2.1(vite@5.2.3):
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3941,7 +3941,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.1)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.2.2
+      vite: 5.2.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10759,8 +10759,8 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite@5.2.2:
-    resolution: {integrity: sha512-FWZbz0oSdLq5snUI0b6sULbz58iXFXdvkZfZWR/F0ZJuKTSPO7v72QPXt6KqYeMFb0yytNp6kZosxJ96Nr/wDQ==}
+  /vite@5.2.3:
+    resolution: {integrity: sha512-+i1oagbvkVIhEy9TnEV+fgXsng13nZM90JQbrcPrf6DvW2mXARlz+DK7DLiDP+qeKoD1FCVx/1SpFL1CLq9Mhw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
