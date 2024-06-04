@@ -105,7 +105,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.1.0
-        version: 3.4.0(react-hook-form@7.51.4(react@18.2.0))
+        version: 3.4.0(react-hook-form@7.51.5(react@18.2.0))
       '@tailwindcss/forms':
         specifier: 0.5.7
         version: 0.5.7(tailwindcss@3.4.3)
@@ -123,7 +123,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       react-hook-form:
         specifier: ^7.43.9
-        version: 7.51.4(react@18.2.0)
+        version: 7.51.5(react@18.2.0)
       swr:
         specifier: ^2.1.5
         version: 2.2.5(react@18.2.0)
@@ -202,13 +202,13 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.3.1
-        version: 3.4.0(react-hook-form@7.51.4(react@18.2.0))
+        version: 3.4.0(react-hook-form@7.51.5(react@18.2.0))
       next:
         specifier: ^14.0.0
         version: 14.2.1(@babel/core@7.24.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-hook-form:
         specifier: ^7.46.2
-        version: 7.51.4(react@18.2.0)
+        version: 7.51.5(react@18.2.0)
       swr:
         specifier: 2.2.5
         version: 2.2.5(react@18.2.0)
@@ -5050,8 +5050,8 @@ packages:
     peerDependencies:
       react: '>=16.13.1'
 
-  react-hook-form@7.51.4:
-    resolution: {integrity: sha512-V14i8SEkh+V1gs6YtD0hdHYnoL4tp/HX/A45wWQN15CYr9bFRmmRdYStSO5L65lCCZRF+kYiSKhm9alqbcdiVA==}
+  react-hook-form@7.51.5:
+    resolution: {integrity: sha512-J2ILT5gWx1XUIJRETiA7M19iXHlG74+6O3KApzvqB/w8S5NQR7AbU8HVZrMALdmDgWpRPYiZJl0zx8Z4L2mP6Q==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
@@ -7142,9 +7142,9 @@ snapshots:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
 
-  '@hookform/resolvers@3.4.0(react-hook-form@7.51.4(react@18.2.0))':
+  '@hookform/resolvers@3.4.0(react-hook-form@7.51.5(react@18.2.0))':
     dependencies:
-      react-hook-form: 7.51.4(react@18.2.0)
+      react-hook-form: 7.51.5(react@18.2.0)
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -12073,7 +12073,7 @@ snapshots:
       '@babel/runtime': 7.24.5
       react: 18.2.0
 
-  react-hook-form@7.51.4(react@18.2.0):
+  react-hook-form@7.51.5(react@18.2.0):
     dependencies:
       react: 18.2.0
 
