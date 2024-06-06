@@ -105,7 +105,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.1.0
-        version: 3.4.0(react-hook-form@7.51.4(react@18.2.0))
+        version: 3.4.2(react-hook-form@7.51.4(react@18.2.0))
       '@tailwindcss/forms':
         specifier: 0.5.7
         version: 0.5.7(tailwindcss@3.4.3)
@@ -202,7 +202,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.3.1
-        version: 3.4.0(react-hook-form@7.51.4(react@18.2.0))
+        version: 3.4.2(react-hook-form@7.51.4(react@18.2.0))
       next:
         specifier: ^14.0.0
         version: 14.2.1(@babel/core@7.24.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1236,8 +1236,8 @@ packages:
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
 
-  '@hookform/resolvers@3.4.0':
-    resolution: {integrity: sha512-+oAqK3okmoEDnvUkJ3N/mvNMeeMv5Apgy1jkoRmlaaAF4vBgcJs9tHvtXU7VE4DvPosvAUUkPOaNFunzt1dbgA==}
+  '@hookform/resolvers@3.4.2':
+    resolution: {integrity: sha512-1m9uAVIO8wVf7VCDAGsuGA0t6Z3m6jVGAN50HkV9vYLl0yixKK/Z1lr01vaRvYCkIKGoy1noVRxMzQYb4y/j1Q==}
     peerDependencies:
       react-hook-form: ^7.0.0
 
@@ -7142,7 +7142,7 @@ snapshots:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
 
-  '@hookform/resolvers@3.4.0(react-hook-form@7.51.4(react@18.2.0))':
+  '@hookform/resolvers@3.4.2(react-hook-form@7.51.4(react@18.2.0))':
     dependencies:
       react-hook-form: 7.51.4(react@18.2.0)
 
