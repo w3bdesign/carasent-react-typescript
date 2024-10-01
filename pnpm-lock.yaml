@@ -107,8 +107,8 @@ importers:
         specifier: ^3.1.0
         version: 3.9.0(react-hook-form@7.53.0(react@18.3.1))
       '@tailwindcss/forms':
-        specifier: 0.5.7
-        version: 0.5.7(tailwindcss@3.4.11)
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.11)
       eslint-config-next:
         specifier: 14.2.13
         version: 14.2.13(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
@@ -1786,6 +1786,11 @@ packages:
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+
+  '@tailwindcss/forms@0.5.9':
+    resolution: {integrity: sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20'
 
   '@tanstack/query-core@5.56.0':
     resolution: {integrity: sha512-Kgp2X6CqI1dh201OHI4I1Ji8NISzG6bylxxNopsMUh2gwaDGNZ11oaGkRDveQpEsaKgvy0nFTCxIypHi80gENA==}
@@ -7403,6 +7408,11 @@ snapshots:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.4.11
 
+  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.11)':
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.4.11
+
   '@tanstack/query-core@5.56.0': {}
 
   '@tanstack/query-devtools@5.55.1': {}
@@ -7582,6 +7592,7 @@ snapshots:
   '@types/node@22.7.4':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/prop-types@15.7.12': {}
 
@@ -10166,7 +10177,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.7.4
+      '@types/node': 20.16.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
