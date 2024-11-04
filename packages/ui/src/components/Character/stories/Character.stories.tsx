@@ -1,10 +1,8 @@
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Character } from './Character.component';
 
-import { Character, ICharacterProps } from './Character.component';
-
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-export default {
+const meta = {
   title: 'Components/UI/Character',
   component: Character,
   argTypes: {
@@ -17,17 +15,14 @@ export default {
       control: 'boolean',
     },
   },
-} as ComponentMeta<typeof Character>;
+} satisfies Meta<typeof Character>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Character> = ({
-  id,
-  priority,
-}: ICharacterProps) => <Character id={id} priority={priority} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Primary = Template.bind({});
-
-Primary.args = {
-  id: 2,
-  priority: true,
+export const Primary: Story = {
+  args: {
+    id: 2,
+    priority: true,
+  },
 };
