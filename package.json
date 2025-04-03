@@ -2,7 +2,7 @@
   "name": "monorepo",
   "version": "1.1.1",
   "private": true,
-  "packageManager": "pnpm@9.15.6",
+  "packageManager": "pnpm@9.15.9",
   "workspaces": [
     "apps/*",
     "packages/*"
