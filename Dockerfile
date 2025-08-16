@@ -1,4 +1,4 @@
-FROM node:22.17.0-alpine AS builder
+FROM node:22.18.0-alpine AS builder
 RUN apk add --no-cache libc6-compat
 RUN apk update
 RUN npm i -g pnpm
@@ -9,7 +9,7 @@ COPY . .
 RUN turbo prune --scope=web --docker
  
 # Add lockfile and package.json's of isolated subworkspace
-FROM node:22.17.0-alpine AS installer
+FROM node:22.18.0-alpine AS installer
 RUN apk add --no-cache libc6-compat
 RUN apk update
 RUN npm i -g pnpm
@@ -27,7 +27,7 @@ COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 RUN pnpm turbo run build --filter=web...
  
-FROM node:22.17.0-alpine AS runner
+FROM node:22.18.0-alpine AS runner
 WORKDIR /app
  
 # Don't run production as root
