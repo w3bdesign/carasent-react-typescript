@@ -160,7 +160,7 @@ importers:
         version: 13.17.0
       cypress-axe:
         specifier: ^1.4.0
-        version: 1.6.0(axe-core@4.10.3)(cypress@13.17.0)
+        version: 1.7.0(axe-core@4.10.3)(cypress@13.17.0)
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@1.21.7)
@@ -190,7 +190,7 @@ importers:
         version: 9.1.2(eslint@9.39.1(jiti@1.21.7))
       eslint-config-turbo:
         specifier: latest
-        version: 2.7.2(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1)
+        version: 2.7.3(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1)
       eslint-plugin-react:
         specifier: 7.37.5
         version: 7.37.5(eslint@9.39.1(jiti@1.21.7))
@@ -2874,12 +2874,12 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  cypress-axe@1.6.0:
-    resolution: {integrity: sha512-C/ij50G8eebBrl/WsGT7E+T/SFyIsRZ3Epx9cRTLrPL9Y1GcxlQGFoAVdtSFWRrHSCWXq9HC6iJQMaI89O9yvQ==}
+  cypress-axe@1.7.0:
+    resolution: {integrity: sha512-zzJpvAAjauEB3GZl0KYXb8i3w6MztWAt2WM3czYTFyNVC30alDmqCm9E7GwZ4bgkldZJlmHakaVEyu73R5St4w==}
     engines: {node: '>=10'}
     peerDependencies:
       axe-core: ^3 || ^4
-      cypress: ^10 || ^11 || ^12 || ^13 || ^14
+      cypress: ^10 || ^11 || ^12 || ^13 || ^14 || ^15
 
   cypress@13.17.0:
     resolution: {integrity: sha512-5xWkaPurwkIljojFidhw8lFScyxhtiFHl/i/3zov+1Z5CmY4t9tjIdvSXfu82Y3w7wt0uR9KkucbhkVvJZLQSA==}
@@ -3200,8 +3200,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-config-turbo@2.7.2:
-    resolution: {integrity: sha512-Tj8P1kJFVNFZxH+BaQO9sowg11N5PkpD34aWZ87PImqkWo7Qk8yRGRpshCeqGwdO5YKX631ZyTQfcDvs4bqBMQ==}
+  eslint-config-turbo@2.7.3:
+    resolution: {integrity: sha512-1ik3XQLJoE9d9ljhw60wTQf7rlwnz8tc6vnhSL7/Ciep2+qPMJpNg+mapcmGhirfDSceVNI8r9pv+HyvrBXhpQ==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -3271,8 +3271,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-turbo@2.7.2:
-    resolution: {integrity: sha512-rZs+l0vQcFo/37OiCWDcTIcksrVfvSBwS6/CI41wc3hA/hWxGOAbT1Diy9/+PBrh2VJts0SzBXb80SqGgVFFPQ==}
+  eslint-plugin-turbo@2.7.3:
+    resolution: {integrity: sha512-q7kYzJCyvceSLVwHgmn3ZBhqpUihQHxC7LEddq5a1eLe5P+/Ob4TnJrdocP38qO1n9MCuO+cJSUTGUtZb1X3bQ==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -8694,7 +8694,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cypress-axe@1.6.0(axe-core@4.10.3)(cypress@13.17.0):
+  cypress-axe@1.7.0(axe-core@4.10.3)(cypress@13.17.0):
     dependencies:
       axe-core: 4.10.3
       cypress: 13.17.0
@@ -9222,10 +9222,10 @@ snapshots:
     dependencies:
       eslint: 9.39.1(jiti@1.21.7)
 
-  eslint-config-turbo@2.7.2(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1):
+  eslint-config-turbo@2.7.3(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1):
     dependencies:
       eslint: 9.39.1(jiti@1.21.7)
-      eslint-plugin-turbo: 2.7.2(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1)
+      eslint-plugin-turbo: 2.7.3(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1)
       turbo: 2.6.1
 
   eslint-import-resolver-node@0.3.9:
@@ -9340,7 +9340,7 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-turbo@2.7.2(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1):
+  eslint-plugin-turbo@2.7.3(eslint@9.39.1(jiti@1.21.7))(turbo@2.6.1):
     dependencies:
       dotenv: 16.0.3
       eslint: 9.39.1(jiti@1.21.7)
