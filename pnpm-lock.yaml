@@ -108,7 +108,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.1.0
-        version: 3.9.1(react-hook-form@7.67.0(react@18.3.1))
+        version: 3.10.0(react-hook-form@7.67.0(react@18.3.1))
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.18(yaml@2.7.0))
@@ -148,7 +148,7 @@ importers:
         version: 5.85.6(@tanstack/react-query@5.85.6(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: 22.17.2
-        version: 22.19.8
+        version: 22.17.2
       '@types/react':
         specifier: 18.3.27
         version: 18.3.27
@@ -205,7 +205,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.9.1
-        version: 3.9.1(react-hook-form@7.67.0(react@18.3.1))
+        version: 3.10.0(react-hook-form@7.67.0(react@18.3.1))
       next:
         specifier: ^15.0.2
         version: 15.4.6(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1336,8 +1336,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@hookform/resolvers@3.9.1':
-    resolution: {integrity: sha512-ud2HqmGBM0P0IABqoskKWI6PEf6ZDDBZkFqe2Vnl+mTHCEHzr3ISjjZyCwTjC/qpL25JC9aIDkloQejvMeq0ug==}
+  '@hookform/resolvers@3.10.0':
+    resolution: {integrity: sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag==}
     peerDependencies:
       react-hook-form: ^7.0.0
 
@@ -2123,6 +2123,9 @@ packages:
 
   '@types/mdx@2.0.13':
     resolution: {integrity: sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==}
+
+  '@types/node@22.17.2':
+    resolution: {integrity: sha512-gL6z5N9Jm9mhY+U2KXZpteb+09zyffliRkZyZOHODGATyC5B1Jt/7TzuuiLkFsSUMLbS1OLmlj/E+/3KF4Q/4w==}
 
   '@types/node@22.19.8':
     resolution: {integrity: sha512-ebO/Yl+EAvVe8DnMfi+iaAyIqYdK0q/q0y0rw82INWEKJOBe6b/P3YWE8NW7oOlF/nXFNrHwhARrN/hdgDkraA==}
@@ -6920,7 +6923,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hookform/resolvers@3.9.1(react-hook-form@7.67.0(react@18.3.1))':
+  '@hookform/resolvers@3.10.0(react-hook-form@7.67.0(react@18.3.1))':
     dependencies:
       react-hook-form: 7.67.0(react@18.3.1)
 
@@ -7833,6 +7836,10 @@ snapshots:
 
   '@types/mdx@2.0.13': {}
 
+  '@types/node@22.17.2':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/node@22.19.8':
     dependencies:
       undici-types: 6.21.0
@@ -7874,7 +7881,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.19.8
+      '@types/node': 22.17.2
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.12.2(@typescript-eslint/parser@8.12.2(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
