@@ -38,7 +38,15 @@ const headers = [
 module.exports = {
   reactStrictMode: true,
   poweredByHeader: false,
-  images: { domains: ["rickandmortyapi.com"], minimumCacheTTL: 1200 },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "rickandmortyapi.com",
+      },
+    ],
+    minimumCacheTTL: 1200,
+  },
   pageExtensions: ["tsx"],
   transpilePackages: ["ui"],
   output: "standalone",
