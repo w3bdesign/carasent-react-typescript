@@ -12,7 +12,7 @@ const formSchema = z.object({
   firstName: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   gender: z.string().min(1, { message: 'Du må fylle ut dette feltet' }),
   food: z.enum(['pasta', 'pizza', 'hamburger'], {
-    errorMap: () => ({ message: 'Du må velge et alternativ' }),
+    message: 'Du må velge et alternativ',
   }),
 });
 
