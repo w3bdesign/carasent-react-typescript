@@ -42,10 +42,7 @@ module.exports = {
   pageExtensions: ["tsx"],
   transpilePackages: ["ui"],
   output: "standalone",
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../..'),
-    appDir: false,
-  },
+  outputFileTracingRoot: path.join(__dirname, '../..'),
     
   
   async headers() {
