@@ -28,7 +28,7 @@
     "eslint": "9.39.2",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.4",
-    "@types/node": "22.17.2",
+    "@types/node": "22.19.11",
     "@types/react": "18.3.28",
     "@types/react-dom": "18.3.7",
     "cypress": "^15.0.0",
