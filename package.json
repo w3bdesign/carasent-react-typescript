@@ -21,7 +21,7 @@
     "turbo": "^2.2.3"
   },
   "engines": {
-    "node": "^22.0.0"
+    "node": "^24.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
