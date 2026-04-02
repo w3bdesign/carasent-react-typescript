@@ -87,7 +87,7 @@ importers:
         version: 10.4.27(postcss@8.5.6)
       babel-loader:
         specifier: ^10.0.0
-        version: 10.0.0(@babel/core@7.29.0)(webpack@5.96.1(esbuild@0.27.3))
+        version: 10.1.1(@babel/core@7.29.0)(webpack@5.96.1(esbuild@0.27.3))
       postcss:
         specifier: ^8.4.47
         version: 8.5.6
@@ -148,7 +148,7 @@ importers:
         version: 5.91.3(@tanstack/react-query@5.90.21(react@19.2.4))(react@19.2.4)
       '@types/node':
         specifier: 24.10.13
-        version: 24.12.0
+        version: 24.10.13
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -2043,6 +2043,9 @@ packages:
   '@types/mdx@2.0.13':
     resolution: {integrity: sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==}
 
+  '@types/node@24.10.13':
+    resolution: {integrity: sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg==}
+
   '@types/node@24.12.0':
     resolution: {integrity: sha512-GYDxsZi3ChgmckRT9HPU0WEhKLP08ev/Yfcq2AstjrDASOYCSXeyjDsHg4v5t4jOj7cyDX3vmprafKlWIG9MXQ==}
 
@@ -2464,12 +2467,18 @@ packages:
     peerDependencies:
       '@babel/core': ^7.8.0
 
-  babel-loader@10.0.0:
-    resolution: {integrity: sha512-z8jt+EdS61AMw22nSfoNJAZ0vrtmhPRVi6ghL3rCeRZI8cdNYFiV5xeV3HbE7rlZZNmGH8BVccwWt8/ED0QOHA==}
+  babel-loader@10.1.1:
+    resolution: {integrity: sha512-JwKSzk2kjIe7mgPK+/lyZ2QAaJcpahNAdM+hgR2HI8D0OJVkdj8Rl6J3kaLYki9pwF7P2iWnD8qVv80Lq1ABtg==}
     engines: {node: ^18.20.0 || ^20.10.0 || >=22.0.0}
     peerDependencies:
-      '@babel/core': ^7.12.0
+      '@babel/core': ^7.12.0 || ^8.0.0-beta.1
+      '@rspack/core': ^1.0.0 || ^2.0.0-0
       webpack: '>=5.61.0'
+    peerDependenciesMeta:
+      '@rspack/core':
+        optional: true
+      webpack:
+        optional: true
 
   babel-plugin-istanbul@6.1.1:
     resolution: {integrity: sha512-Y1IQok9821cC9onCx5otgFfRm7Lm+I+wwxOx738M/WLPZ9Q42m4IG5W0FNX8WLL2gYMZo3JkuXIH2DOpWM+qwA==}
@@ -7011,6 +7020,7 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
+    optional: true
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -7548,11 +7558,13 @@ snapshots:
     dependencies:
       '@types/eslint': 9.6.1
       '@types/estree': 1.0.8
+    optional: true
 
   '@types/eslint@9.6.1':
     dependencies:
       '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
+    optional: true
 
   '@types/esrecurse@4.3.1': {}
 
@@ -7588,6 +7600,10 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@types/mdx@2.0.13': {}
+
+  '@types/node@24.10.13':
+    dependencies:
+      undici-types: 7.16.0
 
   '@types/node@24.12.0':
     dependencies:
@@ -7632,7 +7648,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 24.12.0
+      '@types/node': 24.10.13
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.55.0(@typescript-eslint/parser@8.55.0(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3)':
@@ -7796,20 +7812,26 @@ snapshots:
     dependencies:
       '@webassemblyjs/helper-numbers': 1.13.2
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
+    optional: true
 
-  '@webassemblyjs/floating-point-hex-parser@1.13.2': {}
+  '@webassemblyjs/floating-point-hex-parser@1.13.2':
+    optional: true
 
-  '@webassemblyjs/helper-api-error@1.13.2': {}
+  '@webassemblyjs/helper-api-error@1.13.2':
+    optional: true
 
-  '@webassemblyjs/helper-buffer@1.14.1': {}
+  '@webassemblyjs/helper-buffer@1.14.1':
+    optional: true
 
   '@webassemblyjs/helper-numbers@1.13.2':
     dependencies:
       '@webassemblyjs/floating-point-hex-parser': 1.13.2
       '@webassemblyjs/helper-api-error': 1.13.2
       '@xtuc/long': 4.2.2
+    optional: true
 
-  '@webassemblyjs/helper-wasm-bytecode@1.13.2': {}
+  '@webassemblyjs/helper-wasm-bytecode@1.13.2':
+    optional: true
 
   '@webassemblyjs/helper-wasm-section@1.14.1':
     dependencies:
@@ -7817,16 +7839,20 @@ snapshots:
       '@webassemblyjs/helper-buffer': 1.14.1
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
       '@webassemblyjs/wasm-gen': 1.14.1
+    optional: true
 
   '@webassemblyjs/ieee754@1.13.2':
     dependencies:
       '@xtuc/ieee754': 1.2.0
+    optional: true
 
   '@webassemblyjs/leb128@1.13.2':
     dependencies:
       '@xtuc/long': 4.2.2
+    optional: true
 
-  '@webassemblyjs/utf8@1.13.2': {}
+  '@webassemblyjs/utf8@1.13.2':
+    optional: true
 
   '@webassemblyjs/wasm-edit@1.14.1':
     dependencies:
@@ -7838,6 +7864,7 @@ snapshots:
       '@webassemblyjs/wasm-opt': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
       '@webassemblyjs/wast-printer': 1.14.1
+    optional: true
 
   '@webassemblyjs/wasm-gen@1.14.1':
     dependencies:
@@ -7846,6 +7873,7 @@ snapshots:
       '@webassemblyjs/ieee754': 1.13.2
       '@webassemblyjs/leb128': 1.13.2
       '@webassemblyjs/utf8': 1.13.2
+    optional: true
 
   '@webassemblyjs/wasm-opt@1.14.1':
     dependencies:
@@ -7853,6 +7881,7 @@ snapshots:
       '@webassemblyjs/helper-buffer': 1.14.1
       '@webassemblyjs/wasm-gen': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
+    optional: true
 
   '@webassemblyjs/wasm-parser@1.14.1':
     dependencies:
@@ -7862,15 +7891,19 @@ snapshots:
       '@webassemblyjs/ieee754': 1.13.2
       '@webassemblyjs/leb128': 1.13.2
       '@webassemblyjs/utf8': 1.13.2
+    optional: true
 
   '@webassemblyjs/wast-printer@1.14.1':
     dependencies:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
+    optional: true
 
-  '@xtuc/ieee754@1.2.0': {}
+  '@xtuc/ieee754@1.2.0':
+    optional: true
 
-  '@xtuc/long@4.2.2': {}
+  '@xtuc/long@4.2.2':
+    optional: true
 
   abab@2.0.6: {}
 
@@ -7907,15 +7940,18 @@ snapshots:
   ajv-formats@2.1.1(ajv@8.18.0):
     optionalDependencies:
       ajv: 8.18.0
+    optional: true
 
   ajv-keywords@3.5.2(ajv@6.14.0):
     dependencies:
       ajv: 6.14.0
+    optional: true
 
   ajv-keywords@5.1.0(ajv@8.18.0):
     dependencies:
       ajv: 8.18.0
       fast-deep-equal: 3.1.3
+    optional: true
 
   ajv@6.14.0:
     dependencies:
@@ -7930,6 +7966,7 @@ snapshots:
       fast-uri: 3.1.0
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+    optional: true
 
   ansi-colors@4.1.3: {}
 
@@ -8129,10 +8166,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@10.0.0(@babel/core@7.29.0)(webpack@5.96.1(esbuild@0.27.3)):
+  babel-loader@10.1.1(@babel/core@7.29.0)(webpack@5.96.1(esbuild@0.27.3)):
     dependencies:
       '@babel/core': 7.29.0
       find-up: 5.0.0
+    optionalDependencies:
       webpack: 5.96.1(esbuild@0.27.3)
 
   babel-plugin-istanbul@6.1.1:
@@ -8347,7 +8385,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chrome-trace-event@1.0.4: {}
+  chrome-trace-event@1.0.4:
+    optional: true
 
   ci-info@3.9.0: {}
 
@@ -8407,7 +8446,8 @@ snapshots:
 
   commander@14.0.3: {}
 
-  commander@2.20.3: {}
+  commander@2.20.3:
+    optional: true
 
   commander@4.1.1: {}
 
@@ -8716,6 +8756,7 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.2
+    optional: true
 
   enquirer@2.4.1:
     dependencies:
@@ -8925,7 +8966,8 @@ snapshots:
       iterator.prototype: 1.1.5
       safe-array-concat: 1.1.3
 
-  es-module-lexer@1.7.0: {}
+  es-module-lexer@1.7.0:
+    optional: true
 
   es-object-atoms@1.1.1:
     dependencies:
@@ -9267,6 +9309,7 @@ snapshots:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 4.3.0
+    optional: true
 
   eslint-scope@9.1.2:
     dependencies:
@@ -9334,7 +9377,8 @@ snapshots:
     dependencies:
       estraverse: 5.3.0
 
-  estraverse@4.3.0: {}
+  estraverse@4.3.0:
+    optional: true
 
   estraverse@5.3.0: {}
 
@@ -9348,7 +9392,8 @@ snapshots:
 
   eventemitter2@6.4.7: {}
 
-  events@3.3.0: {}
+  events@3.3.0:
+    optional: true
 
   execa@4.1.0:
     dependencies:
@@ -9424,7 +9469,8 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-uri@3.1.0: {}
+  fast-uri@3.1.0:
+    optional: true
 
   fastq@1.20.1:
     dependencies:
@@ -9614,7 +9660,8 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  glob-to-regexp@0.4.1: {}
+  glob-to-regexp@0.4.1:
+    optional: true
 
   glob@13.0.6:
     dependencies:
@@ -10336,6 +10383,7 @@ snapshots:
       '@types/node': 25.5.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
+    optional: true
 
   jest-worker@29.7.0:
     dependencies:
@@ -10441,7 +10489,8 @@ snapshots:
 
   json-schema-traverse@0.4.1: {}
 
-  json-schema-traverse@1.0.0: {}
+  json-schema-traverse@1.0.0:
+    optional: true
 
   json-schema@0.4.0: {}
 
@@ -10513,7 +10562,8 @@ snapshots:
     optionalDependencies:
       enquirer: 2.4.1
 
-  loader-runner@4.3.1: {}
+  loader-runner@4.3.1:
+    optional: true
 
   locate-path@3.0.0:
     dependencies:
@@ -11121,7 +11171,8 @@ snapshots:
 
   require-directory@2.1.1: {}
 
-  require-from-string@2.0.2: {}
+  require-from-string@2.0.2:
+    optional: true
 
   requires-port@1.0.0: {}
 
@@ -11245,6 +11296,7 @@ snapshots:
       '@types/json-schema': 7.0.15
       ajv: 6.14.0
       ajv-keywords: 3.5.2(ajv@6.14.0)
+    optional: true
 
   schema-utils@4.3.3:
     dependencies:
@@ -11252,6 +11304,7 @@ snapshots:
       ajv: 8.18.0
       ajv-formats: 2.1.1(ajv@8.18.0)
       ajv-keywords: 5.1.0(ajv@8.18.0)
+    optional: true
 
   semver@5.7.2: {}
 
@@ -11598,7 +11651,8 @@ snapshots:
 
   tapable@2.3.0: {}
 
-  tapable@2.3.2: {}
+  tapable@2.3.2:
+    optional: true
 
   temp@0.8.4:
     dependencies:
@@ -11613,6 +11667,7 @@ snapshots:
       webpack: 5.96.1(esbuild@0.27.3)
     optionalDependencies:
       esbuild: 0.27.3
+    optional: true
 
   terser-webpack-plugin@5.4.0(webpack@5.96.1):
     dependencies:
@@ -11629,6 +11684,7 @@ snapshots:
       acorn: 8.16.0
       commander: 2.20.3
       source-map-support: 0.5.21
+    optional: true
 
   test-exclude@6.0.0:
     dependencies:
@@ -11993,10 +12049,12 @@ snapshots:
     dependencies:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
+    optional: true
 
   webidl-conversions@7.0.0: {}
 
-  webpack-sources@3.3.4: {}
+  webpack-sources@3.3.4:
+    optional: true
 
   webpack-virtual-modules@0.6.2: {}
 
@@ -12060,6 +12118,7 @@ snapshots:
       - '@swc/core'
       - esbuild
       - uglify-js
+    optional: true
 
   whatwg-encoding@2.0.0:
     dependencies:
