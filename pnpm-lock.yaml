@@ -168,8 +168,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
       react-error-boundary:
-        specifier: ^4.0.4
-        version: 4.1.2(react@19.2.4)
+        specifier: ^6.0.0
+        version: 6.1.5(@types/react@18.3.28)(react@19.2.4)
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -190,7 +190,7 @@ importers:
         version: 9.1.2(eslint@10.1.0(jiti@2.6.1))
       eslint-config-turbo:
         specifier: latest
-        version: 2.10.4(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4)
+        version: 2.10.12(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4)
       eslint-plugin-react:
         specifier: 7.37.5
         version: 7.37.5(eslint@10.1.0(jiti@2.6.1))
@@ -962,10 +962,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
-
-  '@babel/runtime@7.26.0':
-    resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.28.6':
     resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
@@ -3324,8 +3320,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-config-turbo@2.10.4:
-    resolution: {integrity: sha512-CtWm7UbtsfR+PJOCRIPoLVKUGSDUEeSwKsrlnPGSql9nngUHbVWwWr4xdiMaapvFfiwlks65e5LB7z9uAETgLQ==}
+  eslint-config-turbo@2.10.12:
+    resolution: {integrity: sha512-XwFVvJ2zL12024P6vIn8aiI4eMKMmGTF7za5wpHuZzzbL5GAqI8Fr9usXlKzhHbdigIULOH+b5lvbwEyWiAzvw==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -3416,8 +3412,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-turbo@2.10.4:
-    resolution: {integrity: sha512-nhpzZoQmjlXlrEkeYbzPA/uXnMmUUpkp/88mEU2V+vhGEO1z/CwlBg+3m64JkgO+MX4ODRoBiSo0gg35KcPryA==}
+  eslint-plugin-turbo@2.10.12:
+    resolution: {integrity: sha512-QZ9u3sV3ky4bl3XUpsVG8Ehk11I0omsGV2K7dCDut6sGvaVErFvWbgd46oh5tsnLt/5i+KvuOWgKJneleMqk2Q==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -4911,10 +4907,14 @@ packages:
     peerDependencies:
       react: ^19.2.4
 
-  react-error-boundary@4.1.2:
-    resolution: {integrity: sha512-GQDxZ5Jd+Aq/qUxbCm1UtzmL/s++V7zKgE8yMktJiCQXCCFZnMZh9ng+6/Ne6PjNSXH0L9CjeOEREfRnq6Duag==}
+  react-error-boundary@6.1.5:
+    resolution: {integrity: sha512-l2nk+KhgM6e79tAiHEs3tXTdiTW4ARniKYMQN+cLY5vQFpDOkxuXKIC4uIwYuIKoMpFQ6jEbQz9wBArUmq7GWA==}
     peerDependencies:
-      react: '>=16.13.1'
+      '@types/react': ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   react-hook-form@7.71.1:
     resolution: {integrity: sha512-9SUJKCGKo8HUSsCO+y0CtqkqI5nNuaDqTxyqPsZPqIwudpj4rCrAz/jZV+jn57bx5gtZKOh3neQu94DXMc+w5w==}
@@ -4972,9 +4972,6 @@ packages:
 
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
-
-  regenerator-runtime@0.14.1:
-    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   regexp.prototype.flags@1.5.3:
     resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
@@ -6787,10 +6784,6 @@ snapshots:
       make-dir: 2.1.0
       pirates: 4.0.7
       source-map-support: 0.5.21
-
-  '@babel/runtime@7.26.0':
-    dependencies:
-      regenerator-runtime: 0.14.1
 
   '@babel/runtime@7.28.6': {}
 
@@ -9493,10 +9486,10 @@ snapshots:
     dependencies:
       eslint: 10.1.0(jiti@2.6.1)
 
-  eslint-config-turbo@2.10.4(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4):
+  eslint-config-turbo@2.10.12(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4):
     dependencies:
       eslint: 10.1.0(jiti@2.6.1)
-      eslint-plugin-turbo: 2.10.4(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4)
+      eslint-plugin-turbo: 2.10.12(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4)
       turbo: 2.10.4
 
   eslint-import-resolver-node@0.3.9:
@@ -9695,7 +9688,7 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-turbo@2.10.4(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4):
+  eslint-plugin-turbo@2.10.12(eslint@10.1.0(jiti@2.6.1))(turbo@2.10.4):
     dependencies:
       dotenv: 16.0.3
       eslint: 10.1.0(jiti@2.6.1)
@@ -10780,7 +10773,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 26.1.1
+      '@types/node': 24.10.13
       merge-stream: 2.0.0
       supports-color: 8.1.1
     optional: true
@@ -11466,10 +11459,11 @@ snapshots:
       react: 19.2.4
       scheduler: 0.27.0
 
-  react-error-boundary@4.1.2(react@19.2.4):
+  react-error-boundary@6.1.5(@types/react@18.3.28)(react@19.2.4):
     dependencies:
-      '@babel/runtime': 7.26.0
       react: 19.2.4
+    optionalDependencies:
+      '@types/react': 18.3.28
 
   react-hook-form@7.71.1(react@19.2.4):
     dependencies:
@@ -11536,8 +11530,6 @@ snapshots:
       regenerate: 1.4.2
 
   regenerate@1.4.2: {}
-
-  regenerator-runtime@0.14.1: {}
 
   regexp.prototype.flags@1.5.3:
     dependencies:
